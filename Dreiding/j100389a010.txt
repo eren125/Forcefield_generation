@@ -1,0 +1,4824 @@
+a
+
+Si
+P
+
+s
+Cl
+Ga
+Gc
+
+As
+Sc
+
+Br
+In
+Sn
+
+Sb
+Tc
+1
+
+Nu+
+Cu2+
+Fc2+
+Zn2+
+
+lone pair (e.g., NH2,
+
+8899
+
+Waals Parameters for DREIDING
+
+D0,
+
+source
+
+kcal/mol
+0.0152
+0.0152
+
+12.382
+12.382
+12.0
+14.23
+14.034
+13.843
+13.483
+14.444
+12.0
+
+0.0001
+0.095
+0.0951
+
+0.0774
+0.0957
+0.0725
+0.31
+0.31
+
+n-hexane crystal11·
+
+interpolation
+H20 dimer
+interpolation
+
+Williams"·
+Williams"·
+Williams"4
+Williams"6
+
+interpolation
+interpolation
+P4 crystal
+S8 crystal
+
+12.0
+12.0
+12.0
+13.861
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+
+0.3200
+0.3440
+0.2833
+0.40
+0.40
+0.41
+
+0.43
+0.37
+0.55
+0.55
+0.55
+0.57
+0.51
+
+0.5
+0.05
+0.055
+0.055
+
+Williams"·
+
+interpolation
+interpolation
+interpolation
+interpolation
+interpolation
+interpolation
+interpolation
+interpolation
+interpolation
+interpolation
+
+DREIDING/A
+DREIDING/A
+DREIDING/A
+DREIDING/A
+
+Implicit Hydrogens
+C.R1
+C.34
+C.33
+C.32
+
+0.1356
+0.3016
+0.2500
+0.1984
+0.1467
+
+4.23
+4.2370
+4.1524
+4.0677
+3.9830
+
+C.31
+
+14.034
+12.0
+12.0
+12.0
+12.0
+
+benzene crystal
+CH4 crystal
+
+interpolation
+interpolation
+interpolation
+
+TABLE III: Valence Force Constants for DREIDING
+bonds
+=
+
+n
+
+1
+
+=
+
+2
+
+=
+
+3
+
+angles
+inversions:
+
+X.2, X.R
+C.31
+
+X.3
+
+X.3 of column 16)
+
+[however, the interaction with an sp3 atom of another column is
+given in eq 14 above].
+(i) For dihedral bonds involving an sp3 atom of the oxygen
+column with an sp2 or resonant atom of another column, the
+pair and the oxygen-like prefers to overlap the orbitals of the
+=
+X.3 of column
+sp2 atom, leading to a planar configuration (J
+16,
+
+1
+
+X.2)
+
+van der
+
+Á
+
+3.195
+3.195
+3.195
+4.02
+3.8983
+3.6621
+3.4046
+3.4720
+4.39
+4.27
+4.1500
+4.0300
+3.9503
+4.39
+4.27
+4.15
+4.03
+3.95
+4.59
+4.47
+4.35
+4.23
+4.15
+3.144
+3.472
+4.54
+4.54
+
+H
+
+F
+
+(c) A dihedral double bond involving two
+
+Chemistry, Vol. 94, No. 26, 1990
+
+K
+K
+K
+K
+
+=
+
+700 (kcal/mol)/A2
+
+=
+
+1400 (kca!/mol)/A2
+2100 (kcal/mol)/A2
+100 (kcal/mol)/rad2
+
+K
+K
+K
+
+=
+
+=
+
+=
+
+=
+=
+
+D
+D
+D
+
+0
+„
+
+40(kcal/mol)/rad2
+40(kcal/mol)/rad2
+
+70 kcal/mol
+
+=
+=
+
+140
+
+=
+
+210 kcal/mol
+
+=
+=
+
+kcal/mol
+
+0°
+54.74°
+
+0
+
+the periodic table. However, we eschew such subtleties here.
+F. Inversion. For an atom I bonded to exactly three other
+atoms, J, K, L, it is often necessary to include an energy term
+describing how difficult it is to force all three bonds into the same
+plane (inversion) or how favorable it is to keep the bonds in the
+same plane. Thus for planar molecules such as ethylene, the use
+of bond angle terms will not in general lead to the proper restoring
+force toward the planar configuration, and it is necessary to add
+an explicit four-body inversion term. Similarly for a nonplanar
+molecule such as ammonia (where the barrier to inversion is 6
+kcal/mol), the constants used for bond angle terms may not lead
+to the correct inversion barrier, requiring an explicit four-body
+term to correctly describe the inversion energy. (In fact, for
+DREIDING the inversion barriers of NH3, PH3, etc., are well
+described without explicit inversion terms.)
+A number of approaches have been adapted to describe such
+inversion terms. Denoting the angle between the IL bond and
+the JIK plane as , spectroscopists have often used the form
+
+£fnvW
+
+=
+
+^
+
+*
+
+"
+
+* )2
+
+(24)
+
+[We define 0 so that it is zero for a normal planar molecule
+(where the projection of the IL bond onto the JIK plane points
+away from the bisector of the IJ and IL bonds).]
+In the literature on biological simulations, it has been more
+common to use expressions in which the inversion is treated as
+if it were an (improper) torsion. Thus, the CHARMM force field4
+uses
+
+Efn )
+
+=
+
+AKiM
+
+-
+
+)2
+
+(25)
+
+8900
+
+The Journal
+
+Chemistry, Vol. 94, No. 26, 1990
+
+of Physical
+
+TABLE IV: DREIDING Torsion Parameters for Equivalent Central
+
+Mayo et al.
+TABLE VI: Geometric Valence Parameters for DREIDING/A
+
+Atoms
+atom
+
+Vjj, keal/mol
+
+n
+
+H.
+
+0
+
+B.3
+
+3
+
+C.3
+C.R
+C.2
+
+3
+2
+
+C.l
+N.3
+N.R
+N.2
+N.l
+0.3
+
+2
+
+0.2
+
+2.0
+25.0
+45.0
+
+0.1
+
+0
+
+O.R
+
+2
+
+F.
+
+0.2
+F.
+
+0.611
+
+C.3
+
+C.R
+C.2
+
+N.3
+
+180
+180
+180
+
+N.R
+N.2
+N.l
+0.3
+
+0
+2
+
+180.0
+180.0
+109.471
+120.0
+120.0
+180.0
+109.471
+120.0
+120.0
+180.0
+109.471
+120.0
+120.0
+180.0
+
+C.l
+
+2.0
+25.0
+45.0
+
+2
+
+0.330
+0.330
+0.770
+0.700
+0.670
+0.602
+0.700
+0.620
+0.620
+0.388
+0.660
+0.660
+0.560
+
+H_HB
+
+180
+180
+180
+180
+
+0
+3
+
+bond
+angle, deg
+
+H_
+
+2.0
+2.0
+25.0
+45.0
+
+2
+
+bond radius
+R°, A
+
+atom
+
+, deg
+
+90
+180
+180
+
+O.R
+
+3
+
+Si
+P.3
+S.3
+
+3
+
+2.0
+2.0
+2.0
+2.0
+
+3
+
+2
+
+TABLE VII:
+
+180
+180
+180
+
+atom
+
+H.
+H_HB
+
+90
+
+0
+
+2.0
+2.0
+2.0
+2.0
+0
+2.0
+2.0
+2.0
+2.0
+
+3
+3
+3
+
+Sc3
+
+2
+
+Br
+
+ln3
+
+3
+
+Sn3
+Sb3
+Te3
+
+3
+
+180
+180
+180
+90
+
+C.33
+C.32
+
+180
+180
+180
+
+C.21
+
+C.31
+
+C.3
+C.22
+
+I.
+
+0
+
+C.2
+C.R2
+C.R
+C.R
+
+Na
+Ca
+
+0
+0
+
+C.l
+C.l
+
+Fe
+
+0
+
+Zn
+
+0
+
+N.33
+N.32
+
+3
+2
+
+90
+
+1
+
+1
+
+N.31
+
+TABLE V: Hydrogen Bond Parameters for DREIDING (Based
+
+N.3
+N.22
+
+on
+
+(HjO)j)
+
+N.21
+
+water dimer
+
+convention
+for charges
+
+Qh for
+H20, e
+
+experiment
+gastcigcr
+
+0.33
+
+no charges0
+
+0.00
+
+£>hb,
+
+A
+
+£. Real/
+
+keal/mol
+
+mol
+
+A
+
+2.75
+2.75
+2.75
+
+4.0
+7.0
+9.0
+
+6.13
+-6.05
+-6.03
+
+2.94
+2.93
+2.92
+
+Rj,b,
+
+0.21
+
+“DREIDING/A
+
+uses £hb
+
+=
+
+2.75 A and D bb
+
+=
+
+Ro~o,
+
+EfnM
+
+=
+
+y2Xjl
+
+deg
+
+178.6
+179.9
+
+(26)
+
+where 6 is the angle between JIL and KIL planes and = 2 (for
+planar centers) or = 3 (for tetrahedral centers). MM2 uses the
+form2
+=
+
+Eim(a)
+
+'/2 · (
+
+-
+
+a„)2
+
+(27)
+
+-
+
+</>.
+
+Although the improper torsion formulations
+
+are easier to
+program, we prefer the spectroscopic inversion because of its close
+correspondence to chemical concepts. However, in order that the
+energy have zero slope for planar configurations ( —*· 180°, 0°),
+we replace (24) with the form
+
+Eukl
+
+=
+
+y2ci(cos
+
+-
+
+cos
+
+?)2
+
+(28a)
+
+where
+C,
+
+K,/(sin ?)2
+
+=
+
+1
+
+176.1
+
+9.5 keal/mol.
+
+[ ( - 0)]|
+
+cos
+
+-
+
+N.2
+N.R2
+N.R
+
+8qh-o
+
+where is the improper torsion angle of IJ with respect to KL
+using the JK pseudobond dihedral (the angle between the IJK
+and JKL planes). A second improper torsion approach (used in
+AMBER3) is to consider one bond (say, ¡L) as special and to write
+the energy as
+
+=
+
+bond radius
+R°„ A
+
+bond
+angle, deg
+109.471
+109.471
+109.471
+
+AI3
+
+1.071
+
+Si3
+P.3
+
+0.937
+0.890
+
+S.31
+S.3
+
+1.04
+
+Cl
+Br
+Na
+
+0.997
+
+Ca
+
+1.167
+0.97
+0.99
+
+Ti
+
+1.31
+
+Fe
+
+1.305
+1.280
+1.305
+
+Zn
+Ru
+
+97.2
+104.2
+180.0
+180.0
+
+1.01
+
+90.0
+90.0
+90.0
+90.0
+109.471
+
+90.0
+
+0
+
+A13
+
+Cl
+Ga3
+Ge
+As3
+
+where
+
+atom
+
+(28b)
+
+and K¡ is the force constant. For systems with planar equilibrium
+=
+0°) we replace (28a) with28
+geometries
+
+“
+
+Eukl
+
+X/U
+
+-
+
+cos
+
+/]
+
+(28c)
+
+Waals Parameters for DREIDING/A “
+
+Rq,
+
+d0 keal/mol
+
+atom
+
+£0, A
+
+0.0100
+0.000
+0.3050
+0.2150
+0.1450
+0.0950
+0.2150
+0.1450
+0.0950
+0.2150
+0.1450
+0.0950
+0.1450
+0.0950
+0.4150
+0.3050
+0.2150
+0.1450
+0.3050
+0.2150
+0.1450
+0.3050
+0.2150
+
+N.R
+N.l
+0.32
+
+3.6950
+3.6950
+3.7100
+3.6100
+3.5100
+3.5100
+3.5100
+3.6100
+3.2850
+3.1440
+4.6150
+4.4350
+4.2950
+4.2400
+4.1400
+3.9150
+4.2150
+3.4720
+4.5400
+4.5400
+4.5400
+4.5400
+
+,
+
+3.2000
+2.4000
+4.1800
+4.0800
+3.9800
+3.8800
+4.0800
+3.9800
+3.8800
+4.0800
+3.9800
+3.8800
+3.9800
+3.8800
+3.9950
+3.8950
+3.7950
+3.6950
+3.8950
+3.7970
+3.6950
+3.8950
+3.7950
+
+For X6 potentials, use
+
+j"
+
+=
+
+0.31
+
+0.3
+0.2
+O.R
+O.R1
+F.
+Na
+A13
+
+Si 3
+P.3
+S.31
+
+S.3
+Cl
+Br
+Ca
+
+Ti
+Fe
+
+Zn
+Ru
+
+£>0,
+
+keal/mol
+0.1450
+0.1450
+0.4150
+0.3050
+0.2150
+0.2150
+0.2150
+0.2150
+0.3050
+0.5000
+0.0650
+0.0950
+0.2150
+0.3050
+0.2150
+0.3050
+0.3050
+0.0500
+0.0550
+0.0550
+0.0550
+0.0550
+
+12.0000.
+
+For nonplanar molecules the contribution of (28) to the barrier
+for inversion is
+£ba,
+
+=
+
+(28d)
+
+2C,[sin (y2*?)]2
+
+For nonplanar geometries the inversion expression in (28) treats
+bond IL in a way slightly different from bonds IJ and IK, and
+hence in DREIDING we add together all three possible inversion
+terms with each weighted by a factor of 1/3.
+The parameters in (28) are defined only for atoms that can
+make three bonds and we use force constants as follows:
+(a) For all planar molecules (I = X_2,X_R)
+
+K,
+
+=
+
+40
+
+(kcal/mol)/rad2
+
+(29)
+
+(b) For nonplanar molecules where the central atom is in the
+nitrogen column (I = X_3), we find that the angle terms account
+properly for the inversion barrier in XH3 without the need for
+additional inversion terms. Thus with the harmonic cos angle
+term (10) NH3 and PH3 lead to barriers of 7.4 and 29.5 keal/mol
+respectively, while the harmonic theta angle term (11) leads to
+8.1 and 32.6, respectively. Since these values are both in reasonable agreement with experiment (6 and >30, respectively), we
+take K, = 0 and ignore such inversion terms.
+(c) For nonplanar molecules with four or more bonds, the angle
+interactions will normally prevent inversion of the center and we
+do not include explicit inversion terms. Although the energy £(40
+should have the symmetry
+
+(°
+
+=
+
+van der
+
+£(-40
+it
+
+=
+
+is sometimes useful to bias the
+
+£(+40
+calculations
+
+(30)
+so
+
+that (30)
+
+is not
+
+DREIDING: A Generic Force Field
+
+The Journal
+
+of Physical
+
+Chemistry, Vol. 94, No. 26, 1990
+
+ACANIL01
+
+ACENAP03
+
+nh2
+
+ACIMDC
+
+O
+
+ACINDN
+
+ACMEBZ
+
+0
+
+A
+
+o
+
+,tX„0
+
+ci
+
+ACMTDE
+
+ACHNAP10
+
+O
+
+X.
+>(&copy;
+
+ACGLUA11
+
+Figure
+
+1.
+
+ACHTAR10
+
+The 76 molecules studied in Tables Vlll-X.
+
+8901
+
+The Journal
+
+8902
+
+of Physical
+
+Chemistry, Vol. 94, No. 26, 1990
+
+Mayo et al.
+
+OH
+
+/
+
+ACTAND
+
+ACTYSN
+
+ACONTNIO
+
+ACURID
+ACPENC10
+OH
+
+NHj
+OH
+
+HO
+
+ACYTID
+
+ADGSMH
+
+ADMINA
+
+ACXMOL
+
+ADHELA10
+
+ADMOPM
+
+&copy;
+
+HO.
+
+.1%
+
+HO-
+
+OH
+
+ADMANN
+ADENOSK)
+
+í
+
+o
+
+F
+
+OH
+
+HO
+
+OH
+
+ACYGLY1I
+
+Figure
+
+1.
+
+Continued.
+
+ADPGLP
+
+ADMHEP
+
+ADRTAR
+
+DREIDING: A Generic Force Field
+
+The Journal
+
+of Physical
+
+Chemistry, Vol. 94, No. 26, 1990
+
+8903
+
+o
+
+OH
+
+AGALAM10
+
+AFMSCY
+
+Figure 1. Continued.
+
+satisfied. The most common example occurs when one wants to
+force a specific stereochemistry at a center while calculating
+structures or dynamics. To do this we use the form (24) where
+0 is defined so as to be positive for the desired stereochemistry.
+In this case we use K¡ = 40 kcal/mol to ensure retention of
+stereochemistry. This is particularly important when implicit
+hydrogens are used for the Ca atoms of amino acids (/ = C.31).
+G. Nonbonded Interactions. The two common expressions for
+describing van der Waals nonbonded interactions9 are the Lennard-Jones 12-6 type expression (denoted LJ)
+£vLiw
+
+=
+
+AR-'2
+
+-
+
+SR"6
+
+(31)
+
+and the exponential-6 form (denoted X6)10
+Rfdw
+
+=
+
+Ae~CR
+
+-
+
+5R"6
+
+(32)
+
+The LJ form is simpler (two parameters rather than three) and
+faster to compute (eliminating a square root and an exponentiation); however, our experience is that the X6 form gives a
+somewhat better description of short-range interactions. Thus,
+DREIDING allows either form and our programs permit these
+forms to be interconverted. We consider the LJ as the default
+and use DREIDING/X6 to denote cases where the exponential-6
+form is used.
+(9) (a) In order to truncate the sums over nonbonded interactions for large
+molecules (>1000 atoms), it is often convenient to replace (31), (32), or (37)
+with a function that goes smoothly to zero after some large cutoff distance
+However, in this paper we calculate all nonbond
+(e.g., V?cul = 9.0 A).
+interactions, (b) Similarly for (38) we use no distance cutoffs. [The hydrogen
+bond angle 0DHA is restricted to be larger than 90° (linear is 180°)].
+(10) For sufficiently small R, (32) leads to a negative energy with E -*
+-»
+as /?_-» 0. To avoid such unpleasant situations, we use a simple exponential A exp[-?A?] for R below the inner inflection point of (32) (where the
+curvature becomes negative), with A and c matched to the values at the
+inflection point. For scale parameters f > 10, this inflection point is far up
+the repulsive wall and not important.
+
+In order to better compare (31) and (32), we rewrite them as
+EL1
+
+=
+
+D0[p-'2
+
+2p'6]
+
+-
+
+(31')
+
+<32,)
+
+where p = R/R0 is the scaled distance, R0 is the van der Waals
+bond length (Á), D0 is the van der Waals well depth (kcal/mol),
+and £ is a dimensionless scaling parameter. Given the R0 and D0
+parameters for the LJ form, there are two reasonable choices for
+the scaling parameter £ in X6: (a) £ = 12.0 leads to X6 having
+exactly the same long-range attraction as the LJ form, and (b)
+=
+13.772 leads to a dimensionless force constant
+£
+
+of
+
+= 12 for
+X6, which is exactly equal to the value for LJ. Thus,
+with £ = 13.772, the X6 and LJ forms lead to the same description
+near R0. Given the parameters for the X6 form there are two
+reasonable choices for converting to the LJ form: (c) use the same
+R0 and D0, leading to a similar description near R0; (d) require
+that the coefficient of the long range (R*6) term be exactly the
+same and require that the inner crossing point (£vdw = 0) be at
+the same distance. This leads to simple equations
+
+7fiU-r)
+
+Ol
+
+"
+
+=
+
+1
+
+3
+2(£
+
+Rx
+
+(34a)
+
+l
+
+-
+
+\37 J
+
+6)
+
+(34b)
+
+(34c)
+
+The Journal
+
+8904
+
+of Physical Chemistry,
+
+Vol. 94, No. 26, 1990
+
+Mayo et al.
+
+TABLE VIII: Summary of Results for Various Options in the DREIDING Force Field
+
+atoms, A
+
+bonds
+angles
+vdw
+
+harm.
+theta
+LJ
+
+Morse
+theta
+LJ
+
+cosine
+LJ
+
+x6
+
+harm.
+theta
+LJ
+
+charges
+
+no
+
+no
+
+no
+
+no
+
+e
+
+avg
+
+0.235
+0.221
+
+0.236
+0.223
+
+0.237
+0.224
+
+max
+
+1.953
+
+1.942
+
+1.944
+
+rms
+
+0.035
+0.009
+0.169
+3.237
+0.572
+17.725
+8.925
+0.222
+81.972
+
+0.036
+
+0.035
+0.009
+0.168
+3.356
+0.620
+20.000
+9.036
+0.225
+
+0.250
+0.224
+2.026
+0.033
+0.003
+0.168
+3.065
+0.389
+16.770
+10.042
+0.286
+99.102
+
+rms
+
+bonds, A
+
+avg
+max
+rms
+
+angles, deg
+
+avg
+max
+
+torsions, deg
+
+rms
+
+avg
+max
+
+which
+set
+
+are used
+
+to find the LJ parameters (RL,
+
+of X6 parameters (Rx, Dx, f).
+
+harm.
+
+0.011
+
+0.168
+3.221
+
+0.560
+17.691
+
+8.979
+0.232
+82.083
+
+Dt) for
+
+82,241
+a
+
+given
+
+In the current studies we use options (a) and (c) for interconversions.
+Nonbond interactions are not calculated between atoms bonded
+to each other (1,2 interactions) or atoms involved in angle interactions (1,3 interactions), since it is assumed that these interactions are included in the bond angle energy terms. Our
+programs allow the nonbond interactions between 1,4 neighbors
+to be included, excluded, or scaled. However, in DREIDING,
+the default is to include the full value for all 1,4 terms.
+In DREIDING we require that only nuclear centers be used
+in defining the force field. This may reduce the accuracy for
+describing nonbonded interactions since there is evidence11,12 that
+use of centers other than nuclear centers for (31) or (32) can lead
+to improved descriptions. However, omitting nonnuclear terms
+reduces the number of parameters to be defined and simplifies
+extending the force field to new atoms.
+Consistent with the philosophy of DREIDING, we define the
+van der Waals parameters only for homonuclear cases and use
+combination rules to obtain the parameters for other atoms. The
+standard combination rules assume the following:
+(a) a geometric mean for the A and B parameters
+
+(b) and
+
+Ay
+
+=
+
+[AnAjj]'12
+
+5,;
+
+=
+
+(35b)
+[BuBjj}'f2
+for the C parameters (X6)
+
+arithmetic
+
+an
+
+mean
+
+y2C„ + %Cjj
+
+=
+
+Cij
+
+(35a)
+
+(35c)
+
+For LJ (35ab) is equivalent to assuming the bond energies and
+bond distances combine as geometric means
+=
+
+Doij
+
+Klj
+The
+
+use
+
+of
+
+an
+
+arithmetic
+Roo
+
+=
+
+[DoiiDojj]'D
+
+(36a)
+
+A Ay]1/2
+
+(36b)
+
+mean
+=
+
+'MRot, + Rojj)
+
+we use
+
+(36a) with (36c)
+
+as
+
+defaults.
+
+(11) (a) Williams, D. E.; Cox, S. R. Acta Crystatlogr., Sect. B 1984, 40,
+404. (b) Williams, D. E.; Houpt, D. J. Ibid. 1986, 42, 286. (c) Williams,
+D. E.; Hsu, L. Y, Acta Crystatlogr., Sect. A 1985, 41. 296. (d) Cox, S. R.:
+Hsu, L. Y.; Williams, D. E. Ibid. 1981, 37, 293.
+(12) Jorgensen, W. J.; Tirado-Rives. J. J. Am. Chem. Soc. 1988, 110.
+1657.
+(13) Karasawa, N.; Goddard 111, W. A. J. Phys. Chem. in press.
+
+harm.
+theta
+LJ
+
+R
+
+=
+
+0.247
+0.231
+1.988
+0.035
+
+0.009
+0.165
+3.255
+0.566
+16.277
+9.533
+0.457
+81.804
+
+r
+
+=
+
+1
+
+0.257
+0.243
+3.501
+
+0.035
+0.009
+0.162
+3.310
+0.567
+16.576
+
+DREIDING/
+A
+
+0.334
+0.290
+2.483
+0.036
+0.004
+0.139
+3.674
+0.889
+
+0.576
+
+19.548
+13.324
+0.256
+
+-160.083
+
+-97.569
+
+10.611
+
+The literature is replete with rather disparate values of van der
+Waals parameters. On the basis of ab initio calculations14 on H2
+dimer, CH4 dimer, and (H2)(CH4), we concluded that the best
+set of empirical van der Waals parameters are those of Williams
+and co-workers.11 [These were based on accurate fits to a large
+data base of compounds for which crystal structures and sublimation energies were available.] Consequently, for DREIDING
+we have adopted the Williams parameters with the following
+changes.
+(a) Williams used the exponential-6 form, (32), whereas we
+also allow LJ potentials using the same D0 and R0.
+(b) Williams used off-center locations for H (shortening the
+CH, NH, and OH bonds by 0.07 Á). We use nuclear positions
+for the H van der Waals terms and reoptimized the H parameters
+to fit the crystal data on «-hexane15 (lattice constant and sublimation energy).
+(c) We did not include the extra lone-pair centers that Williams
+used for certain N, O, and F atoms.
+(d) We added other atoms for the C, N, O, and F columns by
+optimizing parameters to fit the structures and sublimation energies (using charges based on experimental moments or on fits
+to the electrostatic potentials from Hartree-Fock wave functions16)
+or by interpolation or extrapolation. We use the same van der
+Waals interactions independent of hybridization of the atom (e.g.,
+C„3, C_R, C-2, C-l all have the same parameters).
+(c) Additional atoms (Na+, Ca2+, Fe2+, Zn2+) were added with
+parameters appropriate for the particular situation encountered
+in biological systems.
+(0 Sometimes it is expedient to lump the hydrogens on carbons
+together with the carbons as a single effective atom (implicit
+hydrogens). We estimated the van der Waals parameters for such
+cases by calculating methane and benzene crystals and requiring
+that lattice spacing and heat of sublimation of 0 K match experiment (see bottom of Table II). The final values are listed
+in Tables 1I-IV.
+H. Electrostatic Interactions. Electrostatic interactions are
+calculated by using9
+
+(36c)
+
+in place of (36b), for combining vdw radii is more consistent with
+chemical practice, however, the geometric mean (36b) has been
+used in successful force fields (e.g., AMBER3) and is more consistent with the X6 form. Also for crystals, (35) allows a simplification in the convergence acceleration formulas for summing
+the vdw terms that speeds up the calculation significantly.13 Thus,
+DREIDING uses (35) for X6 potentials. Our computer programs
+allow either form to be used for LJ cases: however, for DREID-
+
+ING
+
+harm.
+theta
+
+Eq
+
+=
+
+(322.0637)0,2;/^
+
+(37)
+
+(14) Brusich, M. J.; Hurley, J. N.; Lee, J. G.; Goddard III, W. A. Unpublished results. Brusich, M. J. Ph.D. Thesis, California Institute of Technology, 1988. Hurley. J. N. M.S. Thesis, California Institute of Technology.
+1988.
+
+(15) To make this conversion we first carried out calculations using the
+Williams scheme and verified his results for crystals of -hexene and benzene.1'8 In doing these calculations we allowed the internal coordinates to
+respond to the fields and chose the valence force field parameters so that the
+observed geometries are stable (Williams calculated only intermolecular interactions). We then modified the charges in the Williams’ calculations to
+correspond with values from more recent studies16 (@H = 0.14 e) and verified
+that this leads to negligible changes in the results. We then centered the
+hydrogen van der Waals and Coulomb terms on the hydrogen nuclei and
+determined parameters leading to the same net stresses in the crystals (after
+rcoptimiz.ing valence terms to yield the observed bond distances and angles).
+These calculations all use the polygraf
+program which uses periodic
+boundary conditions with accuracy-controlled acceleration convergence13 for
+electrostatic and van der Waals terms (accuracy parameter of 0.0! keal/mol).
+
+DREIDING: A Generic Force Field
+
+The Journal
+
+of Physical Chemistry,
+
+TABLE IX: Errors in Calculating the Structures for 76 Organic Molecules Using the DREIDING Force Field0
+atoms, A
+bonds, Á
+angles, deg
+molecule
+Natm tRMS Aatm Matm Nbnd Rbnd Abnd Mbnd Nang Rang Aang
+Mang
+
+TOTAL
+AAXTHP
+ABAXES
+ABBUMO10
+ABINOR02
+AB1NOS01
+
+76»
+
+26
+25
+22
+10
+10
+
+ABTOET
+ABZTCX
+ACADOS
+ACAFLR
+ACAN1L01
+ACARAP
+ACBNZA01
+ACBUOL
+ACC1TR10
+ACDXUR
+ACENAP03
+ACFPCH
+ACFUCN
+ACGLSP
+ACGLUA11
+ACHGAL
+
+27
+20
+22
+
+ACH1ST20
+
+14
+
+ACHNAP10
+ACHTAR10
+AC1MDC
+AC1NDN
+AC1NST
+ACKYNU
+ACMBPN
+ACMEBZ
+ACMTDE
+ACNORT
+ACNPAC10
+ACNPEC
+ACONTNIO
+ACPENC10
+ACPPCA
+ACPRET03
+ACPYNS
+ACRAMS
+ACSALA01
+
+15
+
+17
+
+0.235
+0.334
+0.112
+0.113
+0.090
+0.075
+0.414
+0.351
+0.148
+0.147
+
+24
+22
+
+0.070
+0.340
+0.146
+0.449
+0.265
+
+19
+
+0.141
+
+12
+14
+
+0.023
+0.073
+0.275
+
+25
+
+0.341
+
+15
+
+26
+
+0.190
+0.180
+0.336
+0.078
+0.148
+0.023
+0.072
+0.244
+
+18
+
+0.391
+
+24
+
+10
+
+22
+13
+
+17
+
+17
+
+10
+4
+14
+
+13
+
+0.259
+0.175
+0.254
+0.266
+0.050
+0.844
+0.184
+0.288
+0.225
+0.290
+0.263
+0.867
+0.097
+
+ACSESO10
+
+23
+
+0.211
+
+ACTAND
+ACTHBZ
+ACTHCP
+ACTOLD
+ACTYSN
+ACURID
+ACVCHO
+ACXMOL
+ACXMPR
+ACYGLY11
+ACYT1D
+ADELOXIO
+ADENOSIO
+ADFGLP
+ADGSMH
+ADHELA10
+ADMANN
+ADMHEP
+ADMINA
+ADMOPM
+ADRTAR
+ADYPNL
+AEBDODIO
+AENLAN10
+AFCYDP
+AFMSCY
+AFURPOIO
+AFUTDZ10
+AFUTHU
+AGALAM10
+AGLUAM10
+AHARFU
+
+24
+22
+
+0.379
+0.297
+0.093
+0.045
+0.774
+0.126
+0.109
+0.408
+
+14
+
+16
+31
+15
+21
+
+32
+15
+
+12
+
+29
+18
+
+26
+
+10
+1
+
+1
+
+16
+19
+12
+
+22
+14
+8
+
+0.071
+0.095
+
+14
+
+0.202
+0.127
+0.088
+0.059
+0.340
+0.092
+0.122
+0.080
+
+16
+
+0.061
+
+24
+
+0.677
+0.139
+0.354
+0.256
+0.420
+0.413
+0.306
+0.140
+0.247
+0.067
+0.109
+0.328
+0.120
+
+17
+
+28
+19
+11
+
+29
+14
+12
+
+13
+
+33
+
+22
+35
+24
+20
+13
+
+12
+16
+15
+13
+
+16
+
+0.221
+
+1.953
+
+0.284
+0.105
+
+0.740
+0.177
+0.208
+0.162
+0.155
+
+0.101
+0.075
+
+0.064
+0.343
+0.287
+0.118
+0.114
+0.062
+0.296
+0.108
+0.381
+0.193
+
+0.126
+0.022
+0.065
+0.230
+0.287
+0.171
+0.158
+0.291
+
+0.066
+0.117
+0.023
+0.067
+0.207
+0.338
+0.206
+0.141
+0.211
+0.188
+0.045
+
+0.787
+0.160
+0.249
+0.165
+0.244
+0.235
+0.768
+0.086
+0.169
+0.266
+0.223
+0.077
+0.042
+0.650
+0.109
+0.085
+0.322
+0.557
+0.084
+0.190
+0.109
+0.077
+0.056
+0.284
+0.082
+0.102
+0.072
+0.054
+0.610
+0.121
+0.313
+
+0.210
+0.309
+0.332
+0.256
+0.129
+0.204
+0.060
+0.097
+0.281
+
+0.103
+
+10
+
+0.035
+0.039
+0.036
+0.029
+0.020
+0.023
+0.028
+0.064
+0.028
+0.033
+0.026
+
+22
+
+0.031
+
+13
+
+12
+
+0.042
+0.035
+0.030
+0.032
+0.026
+0.029
+0.034
+0.032
+0.024
+0.028
+0.024
+0.036
+0.024
+0.030
+0.049
+0.033
+0.028
+0.033
+0.038
+0.029
+0.026
+0.040
+0.039
+0.030
+0.054
+0.037
+
+32
+
+0.031
+
+19
+
+0.040
+0.055
+0.039
+0.036
+0.039
+
+1483
+26
+28
+26
+10
+10
+
+1.316
+0.915
+
+30
+
+0.452
+0.443
+0.130
+0.822
+0.325
+0.982
+0.826
+0.294
+0.033
+0.154
+0.699
+0.763
+0.379
+0.367
+0.642
+0.164
+0.277
+
+24
+
+0.031
+0.111
+0.605
+
+3
+
+0.852
+0.716
+0.430
+0.683
+0.847
+0.100
+
+21
+
+19
+
+24
+25
+20
+14
+18
+
+14
+25
+15
+18
+
+14
+16
+9
+15
+
+26
+18
+
+25
+14
+15
+
+35
+17
+
+1.458
+
+21
+
+0.404
+0.669
+0.509
+0.682
+0.513
+
+37
+
+1.424
+0.191
+
+29
+
+0.608
+
+26
+27
+23
+
+1.457
+
+0.864
+0.202
+0.086
+
+16
+
+13
+
+11
+11
+
+1.953
+
+16
+
+0.252
+0.235
+
+20
+
+1.103
+1.294
+
+23
+
+0.159
+0.338
+0.300
+0.168
+0.079
+0.976
+0.169
+0.224
+0.176
+0.119
+
+7
+
+12
+
+0.031
+
+0.009
+0.002
+0.012
+0.024
+0.015
+
+0.169
+0.088
+-0.081
+0.045
+0.032
+0.034
+
+2174
+
+-0.067
+
+43
+
+0.025
+0.156
+0.003 -0.066
+0.002 -0.082
+0.005 -0.056
+0.006 -0.054
+0.007 -0.087
+0.009 -0.076
+0.015
+0.052
+0.002 -0.064
+0.038
+0.000
+0.018
+0.047
+0.005 -0.062
+0.066
+0.012
+0.011
+0.039
+0.005 -0.046
+-0.001 -0.045
+0.055
+0.035
+0.046
+0.007
+0.022
+0.038
+0.000 -0.087
+0.006 -0.058
+0.007 -0.052
+0.077
+0.013
+0.012 -0.065
+0.008 -0.045
+0.008
+0.061
+0.005 -0.065
+0.009 -0.092
+0.060
+0.019
+
+33
+35
+27
+
+0.021
+0.011
+
+-0.016 -0.089
+0.024
+0.055
+0.008 -0.053
+0.076
+0.018
+0.022
+0.163
+0.014 -0.072
+0.011
+0.072
+0.064
+0.018
+0.000 -0.079
+
+-0.017 -0.070
+0.031
+0.012 -0.050
+0.026
+0.005 -0.049
+0.031
+0.002 -0.071
+0.031
+0.007 -0.046
+0.039
+
+12
+
+0.034
+0.038
+0.034
+0.024
+0.029
+0.023
+0.032
+0.032
+0.038
+0.027
+
+14
+
+0.021
+
+0.011
+
+18
+
+0.029
+0.030
+0.024
+0.038
+0.036
+
+0.000
+0.006
+0.006
+0.013
+0.003
+0.018
+
+14
+18
+
+32
+21
+
+12
+
+30
+14
+
+1.350
+0.264
+
+26
+
+0.752
+0.597
+
+37
+25
+
+1.544
+1.098
+
+39
+26
+22
+
+13
+
+1.671
+
+14
+
+1.772
+1.432
+
+14
+
+12
+
+30
+17
+31
+
+42
+29
+20
+25
+19
+34
+21
+
+26
+18
+
+24
+12
+3
+
+22
+38
+24
+39
+19
+18
+
+53
+25
+27
+63
+23
+16
+
+52
+27
+
+42
+17
+
+42
+43
+31
+
+16
+14
+21
+
+29
+16
+
+33
+
+-0.008 -0.066
+
+20
+
+0.012
+0.013
+0.020
+0.007
+0.013
+0.011
+0.001
+
+0.022
+
+0.059
+
+8
+
+0.071
+
+26
+
+-0.057
+-0.046
+
+51
+31
+
+0.057
+0.057
+
+45
+
+-0.089
+
+19
+
+0.042
+0.043
+
+21
+
+-0.059
+0.070
+0.039
+
+18
+
+17
+
+27
+39
+17
+
+-0.083
+
+52
+
+63
+
+-0.007
+0.005
+
+-0.058
+
+14
+
+0.026
+0.040
+
+0.001
+
+0.521
+0.143
+
+13
+
+0.081
+
+18
+
+0.194
+0.680
+0.233
+
+15
+12
+18
+
+0.032
+0.029
+0.034
+0.036
+
+0.025
+0.004
+0.018
+0.010
+
+0.078
+0.169
+0.065
+0.045
+0.050
+
+0.659
+0.244
+
+40
+
+0.061
+
+0.011
+
+0.064
+0.126
+0.067
+
+0.041
+0.033
+
+36
+45
+
+3.224
+5.432
+2.630
+
+-0.002 -0.068
+
+41
+
+41
+
+34
+20
+20
+27
+21
+
+15
+
+27
+
+3.470
+3.404
+3.728
+1.992
+2.055
+5.510
+3.107
+3.368
+2.620
+3.455
+0.856
+1.804
+3.116
+5.043
+2.013
+4.416
+3.488
+3.625
+4.596
+
+0.566
+1.189
+
+0.504
+0.527
+0.294
+0.561
+
+17.750
+12.637
+8.949
+4.319
+3.546
+3.145
+13.280
+
+0.935
+0.394 -10.743
+0.742
+11.893
+0.150
+4.788
+0.328
+-4.355
+1.849
+11.947
+0.266
+6.535
+1.172
+11.581
+0.556
+9.064
+0.221
+6.883
+
+-0.182
+
+-1.569
+
+0.375
+
+4.275
+7.608
+11.280
+4.480
+11.487
+
+0.211
+1.793
+
+0.746
+1.298
+
+0.439
+0.555
+1.352
+0.003
+
+Vol. 94, No. 26, 1990
+
+torsions, deg
+
+Ntor
+
+10.621
+
+19
+
+7.879
+16.993
+3.715
+9.697 -1.459
+25.815
+12.712 -0.270 -38.129
+4.670
+0.119
+11.540
+0.475
+0.853
+0.001
+1.514 -0.041
+-4.121
+8.582 -1.471 -26.496
+6.993 -0.440 -21.170
+7.300 -0.537 -22.115
+5.313
+0.987
+15.567
+13.314
+6.693
+31.175
+1.798
+0.026
+4.231
+6.675
+17.029
+2.637
+0.000
+0.000
+0.000
+1.991
+0.713
+4.973
+5.353
+2.572
+15.273
+17.848
+0.864
+36.614
+9.394 -1.458 -25.839
+7.649
+14.020
+4.549
+9.168 -1.780 -26.258
+13.897
+2.797
+81.978
+1.687
+4.686
+0.779
+13.905
+5.504
+29.653
+4.435 -0.442
+10.753
+19.499 -0.222 -49.374
+11.833 -4.218 -24.082
+5.488 -0.496
+12.092
+8.989 -3.022 -23.180
+15.904 -0.310
+48.624
+3.524
+2.196
+6.674
+6.284
+1.287
+21.160
+10.152 -0.595 -48.260
+9.412
+2.499
+28.852
+11.087
+0.032 -20.845
+1.933
+-4.199
+0.508
+26.045 -4.720
+70.212
+4.716
+0.790
+11.713
+6.019 -2.383 -14.540
+10.490
+25.678
+1.500
+22.925 -1.103
+42.963
+3.335 -0.294
+4.928
+6.044
+1.698
+18.946
+3.958
+19.114
+0.595
+2.526
+0.141
+8.632
+4.795 -0.125
+8.698
+9.894
+28.165
+3.363
+4.940
+0.086 -11.066
+5.480 -0.632
+-8.664
+4.382
+0.972
+10.243
+2.165
+0.535
+-5.464
+9.020 -1.217
+39.361
+4.775
+2.039
+10.617
+8.416 -0.444 -21.929
+10.084
+2.446
+22.160
+5.240 -0.687 -21.473
+9.313 -2.233 -29.162
+7.427
+1.110
+15.662
+7.301 -0.286 -17.911
+15.706
+0.267 -32.022
+2.763
+-8.283
+0.253
+3.804
+0.597
+8.020
+17.811
+9.884
+37.877
+4.947
+0.742 -12.166
+
+61
+
+17
+17
+61
+41
+
+49
+36
+
+34
+59
+38
+29
+33
+21
+
+39
+26
+33
+19
+
+0
+
+1.469
+
+12.303
+
+3.397
+2.634
+3.968
+3.032
+4.578
+
+0.177
+0.666
+0.457
+0.450
+1.150
+
+8.524
+6.547
+8.609
+7.172
+17.750
+
+1.826 -0.132
+-5.193
+3.189
+0.541
+9.435
+2.640
+0.961
+11.600
+6.244
+1.419
+12.659
+3.674
+0.331
+8.881
+2.884
+0.405
+13.115
+4.626
+1.124
+12.698
+2.728
+0.099 -12.551
+4.045
+0.593
+9.513
+2.942
+0.391
+9.973
+1.816
+0.259
+5.491
+0.192
+2.186
+5.476
+2.799
+0.447
+7.599
+2.070
+0.148
+-4.471
+0.211
+2.914
+7.658
+3.358 -0.115
+-7.329
+1.897
+0.412
+3.778
+1.209
+3.856
+11.085
+4.172
+0.389
+-9.449
+4.068
+0.804
+7.223
+2.600
+0.763
+7.758
+2.490
+0.680
+11.187
+3.135
+0.349
+9.106
+1.984
+0.358
+3.529
+4.699
+1.451
+12.574
+0.332
+2.855
+5.443
+1.830
+0.907
+3.966
+1.642
+0.512
+-4.114
+1.011 -0.054
+2.049
+3.755
+0.346 -10.644
+2.017
+0.414
+5.173
+1.538
+0.099
+4.522
+2.344
+0.084
+5.613
+2.868
+0.550
+11.350
+3.719
+0.735
+9.218
+3.277
+0.059
+7.685
+0.168
+3.511
+-7.646
+2.502
+0.309
+-5.996
+1.861 -0.091
+4.288
+1.658
+0.449
+3.459
+4.206
+0.321
+8.847
+2.701
+0.673
+8.506
+
+Mtor
+
+12
+
+65
+
+32
+
+-0.062
+
+A tor
+
+33
+
+41
+
+10.666
+10.724
+
+-1.783
+-3.488
+
+Rtor
+
+8.948
+0.226
+8.399 -3.060
+3.959
+0.216
+4.466
+0.248
+5.363
+0.522
+3.824 -0.358
+8.338 -1.120
+19.440
+1.097
+5.420 -0.961
+5.386 -0.877
+2.675
+1.468
+
+2888
+
+-9.116
+
+1.441
+1.911
+5.171
+
+8905
+
+7
+31
+
+47
+27
+53
+22
+20
+78
+36
+29
+105
+
+30
+19
+
+76
+35
+53
+19
+
+64
+62
+37
+22
+14
+
+22
+38
+20
+44
+24
+5
+
+35
+85
+45
+25
+57
+22
+22
+28
+39
+52
+20
+73
+65
+93
+48
+50
+26
+24
+39
+26
+13
+
+39
+
+81.978
+
+-20.063
+10.179
+
+-10.545
+-8.294
+6.179
+
+-23.090
+47.904
+
+-21.874
+-22.535
+6.057
+
+-3.097 -26.447
+
+8906
+
+The Journal
+
+of Physical
+
+Chemistry, Vol. 94, No. 26, 1990
+
+Mayo et al.
+
+TABLE IX (Continued)
+atoms, Á
+
+bonds, Á
+
+molecule
+
+Natm
+
+tRMS
+
+Aatm
+
+Matm
+
+Nbnd
+
+Rbnd
+
+AHCDLA
+AHDITX
+
+14
+
+0,075
+0.185
+
+0.067
+0.155
+
+0.141
+0.441
+
+¡*6
+
+0.033
+0.037
+
+26
+
+30
+
+torsions, deg
+
+angles, deg
+
+Abnd
+
+Mbnd
+
+Nang
+
+Rang
+
+Aang
+
+0.019
+0.009
+
+-0.051
+0.076
+
+26
+48
+
+1.813
+1.817
+
+0.040
+0.279
+
+Mang
+-4.555
+-5.833
+
+Ntor
+
+Rtor
+
+Ator
+
+37
+
+3.403
+5.588
+
+0.400
+
+71
+
+Mtor
+8.096
+
+-1.256 -22.254
+
+“Cambridge notation, see Figure 1. Here NX is the number of terms, RX is the rms error, AX is the average error, and MX is the maximum
+for X = atoms (atm), bonds (bnd), angles (ang), and torsions (tor). The total rms error in the Cartesian coordinates is indicated by trms.
+Bonds arc of harmonic form (4), angles are of harmonic theta form (10), torsions are single term form (13), inversions are of spectroscopic form (29),
+nonbonds are of Lennard-Jones form (32), charges are not included. ^Number of molecules.
+error
+
+where Q¡ and Qj are charges in electron units, R,¡ is the distance
+in Á, t is the dielectric constant (usually e = 1). and 332.0637
+not calculated between
+converts
+Eg to kcal/mol. Interactions are
+atoms bonded to each other (1,2 interactions) or involved in angle
+terms (1,3 interactions) since these are assumed to be contained
+in the bond and angle interactions.
+A serious difficulty is how to predict the charges. For small
+molecules it has been possible to fit charges to the electrostatic
+
+potentials calculated from high-quality Hartree-Fock wave
+functions.16 For good basis sets the results agree with observed
+electrical moments and should be the best choices molecular
+dynamics simulations. A method for predicting accurate charges
+of large molecules is desperately needed. Some progress has been
+made;17·18
+we either
+
+however, there is not yet a general method. In this paper
+ignore charges or use the Gasteiger17 estimates for
+
+charges.
+
+The calculations reported in this paper are all for molecules
+in a vacuum or for molecular crystals, and hence we use e = 1.
+In simulations of biological systems it is common to ignore solvent
+and to use e
+is a constant, often 1.0, 4.0, or 8.0)
+e0/?,y, (where c0
+as an approximate way to represent the effects of the solvent. This
+is needed in order to stabilize charged residues and phosphates
+and to include the proper bias toward internal hydrophobic interactions. As the simplest way to simulate solvation of charged
+groups by the solvent, we recommend constructing a locally neutral
+cluster by addition of counterions (Na+ or Cl") to charged groups
+not involved in salt bridges. This allows us to use t =
+in (37)
+so that local electrostatic effects can have their full effect. (Better
+of course is to consider the solvent explicitly.) However, in this
+paper we omit counterions in order to simplify comparisons between various force fields.
+/. Hydrogen Bonding. Within the constraint that charges and
+van der Waals interactions must be centered on nuclei, it is difficult
+to obtain a force field that (a) correctly predicts the structure and
+bond energy of H,0 dimer, and (b) predicts the sublimation energy
+and structure of ice while (c) using the van der Waals parameters
+appropriate for non-hydrogen-bonded systems. As a result,
+DREIDING uses a special hydrogen bond term to describe the
+interactions involving a hydrogen atom (denoted H_HB) on the
+very electronegative atoms (N, O, F) associated with hydrogen
+bonds. When the hydrogen on such a donor is close to an electronegative acceptor atom (N, O, F), we (a) explicitly include
+all van der Waals and electrostatic interactions corresponding to
+the charges on the various atoms (including the hydrogen) and
+in addition, and (b) include a CHARMM-like hydrogen bonding
+-
+
+1
+
+potential43·96
+£'hb
+
+=
+
+Aib[5(/?ht>/Ada)12
+
+~
+
+6(/?hb/^da)10]
+
+cos4 (0dha)
+
+(38)
+
+Here 0DHA is the bond angle between the hydrogen donor (D),
+the hydrogen (H), and the hydrogen acceptor (A), while /?DA is
+the distance between the donor and acceptor atoms (in Á).
+The values of £>hb and Rbb depend on the convention for assigning charges. Thus, Gasteiger charges lead to gH = 0.21 for
+(16) (a) Cox, S. R.; Williams, D. E. J. Comput. Chem. 1981, 2. 304. (b)
+Chirlian. L. E.; Francl, . M. Ibid. 1987. 8, 894.
+(17) (a) Gasteiger, J.; Marsili, M. Tetrahedron 1980, 36, 3219. (b) Ex-
+
+tended to phosphorous by Paul Saze (parameters: A
+7,40, B = 3,0, C =
+-1.0). (c) For systems with formal charges, charges for the neutral molecule
+were calculated first and then the appropriate net charge was added to the
+affected atoms.
+(18) Rappé, A. K.; Goddard 111. W. A. Charge Equilibration in Molecular
+Dynamics Simulations. J. Phyr. Chem. To be submitted for publication.
+-
+
+H20, whereas Hartree-Fock calculations lead to
+
+QH
+
+=
+
+0.3416a
+
+or 0.4016b and
+
+experiment leads to QH = 0.33. The resulting values
+for Dhb and Rhb (based on H20 dimer) are given in Table V. Note
+in Table II that the van der Waals well depth for H_HB is
+different than for H_.
+J. DREIDING
+The initial stage of developing DREIDING
+[A.
+(1984-1985) utilized somewhat simplified energy expressions.
+This early force field (denoted DRE1DING/A) has been used
+for a number of calculations and leads to reasonable geometries.
+Differences from DREIDING are as follows.
+(a) Bond stretch. Only the harmonic form (4) was used, with
+Ku = 1000 (kcal/mol)/Á2 for all bonds. The atomic radii of Table
+
+VI
+
+are used.
+
+(b) Angle bend. The simple harmonic angle form (11) was used
+with KUK = 100 (kcal/mol)/rad2 for all angle terms. All X_3
+bond angles were taken as tetrahedral (0° = 109.471°) except S.3
+and S_31 as indicated in Table VI.
+(c) Inversion. The CHARMM form (25) was used with Kim
+=
+40 (kcal/mol)/rad2 for nonplanar molecules (X„3) and19 Kim
+=
+300 (kcal/mol)/rad2 for planar molecules (X.R, X_2). The
+X_2, X_R centers have 0 = 0 and X_3 centers have 0 = 35.264°
+if J and K are not hydrogens and 0 = 31.4° if J or A- is a
+hydrogen.
+(d) Torsion. The form (13) was used but the barriers are taken
+as 20 kcal/mol for double bonds ( K = X.2 or X_R),
+kcal/mol
+for X.3-X.3 single bonds, and 0.2 kcal/mol for other cases. No
+distinction was made for the oxygen column.
+(e) van der Waals. Lennard-Jones 12-6 was used (31) with
+the parameters in Table VII.
+(f) Electrostatics. Charges based on CHARMM/EFI4a were
+used for peptides and nucleic acids. Charges were generally
+ignored for other sytems.
+(g) Hydrogen bonds. The hydrogen atoms (H_HB) bonded
+to electronegative atoms (N and O) were described with the
+hydrogen bond form (38) (using Dhb = 9.5 kcal/mol and Rbb =
+2.75 A) when close to electronegative atoms (N and O). No
+explicit charges or van der Waals interactions were included for
+such hydrogens.
+1
+
+III. Discussion
+We consider the DREIDING force field to be the simplest
+generic force field capable of providing accurate geometries for
+organic, biological, and main-group inorganic systems. We have
+deliberately used the fewest possible number of parameters and
+couched the choices in terms of general hybridization concepts.
+Thus, all geometric parameters arise from either addition of bond
+radii or angles of the simplest hydrides (AH„, H„A-BH„). Only
+a single force constant each is used for bonds, angles, and inversions, and only six values for torsional barriers are used. The
+focus here has been on the B, C, N, O, and F columns of the
+periodic table, with a few other elements (e.g., Na, Ca, Zn, Fe)
+added that are commonly used for simulations of biological
+systems. The parameters have been biased toward the first-row
+elements (and carbon).
+The valence energies calculated here can be considered as strain
+energies and hence one could calculate heats of formation by
+adding in Benson’s group additivity energies.20 We have not yet
+implemented this procedure.
+(19) This value must be high enough to ensure that planar centers remain
+planar. In previous DREIDING/A calculations, a value of 1000 (kcal/
+
+mol)/rad2
+
+was
+
+used.
+
+DREIDING: A Generic Force Field
+
+The Journal
+
+of Physical
+
+TABLE X: Comparisons of Error (in Á) from Various Force Fields for the 76 Molecules of Figure
+molecule
+
+total
+
+AAXTHP
+ABAXES
+ABBUMO10
+ABINOR02
+AB1NOS01
+
+ABTOET
+ABZTCX
+ACADOS
+ACAFLR
+ACANIL01
+ACARAP
+ACBNZA01
+ACBUOL
+ACCITR10
+ACDXUR
+ACENAP03
+ACFPCH
+ACFUCN
+ACGLSP
+ACGLUA11
+ACHGAL
+ACH1ST20
+ACHNAP10
+ACHTAR10
+ACIMDC
+AC1NDN
+AC1NST
+ACKYNU
+ACMBPN
+ACMEBZ
+ACMTDE
+ACNORT
+ACNPAC10
+ACNPEC
+ACONTNIO
+ACPENC10
+ACPPCA
+ACPRET03
+ACPYNS
+ACRAMS
+ACSALA01
+
+standard
+
+Morse bond
+
+cosine angle
+
+exponential vdw
+
+0.235
+0.334
+0.112
+0.113
+0.090
+0.075
+0.414
+0.351
+0.148
+0.147
+0.070
+0.340
+0.146
+0.449
+0.265
+0.141
+0.023
+0.073
+0.275
+
+0.236
+0.337
+0.119
+0.115
+0.090
+0.076
+0.420
+0.350
+0.147
+0.150
+0.070
+0.343
+
+0.238
+0.341
+0.117
+0.116
+0.090
+0.076
+0.427
+0.312
+
+0.248
+0.340
+0.087
+0.079
+0.085
+0.068
+0.273
+0.424
+0.158
+0.292
+0.120
+0.337
+0.190
+0.523
+0.169
+0.130
+0.024
+0.056
+0.262
+0.265
+0.179
+0.169
+0.329
+0.064
+0.144
+
+0.341
+
+0.190
+0.180
+0.336
+0.078
+0.148
+0.023
+0.072
+0.224
+0.391
+
+0.259
+0.175
+0.254
+0.266
+0.050
+0.844
+0.186
+0.288
+0.225
+0.290
+0.263
+0.867
+0.097
+
+ACSESO10
+
+0.211
+
+ACTAND
+ACTHBZ
+ACTHCP
+ACTOLD
+ACTYSN
+ACURID
+ACVCHO
+ACXMOL
+ACXMPR
+
+0.379
+0.297
+0.093
+0.045
+0.774
+0.126
+0.109
+0.408
+
+ACYGLY11
+ACYTID
+ADELOXIO
+ADENOSIO
+ADFGLP
+ADGSMH
+ADHELA10
+ADMANN
+ADMHEP
+ADM1NA
+ADMOPM
+ADRTAR
+ADYPNL
+AEBDODIO
+AENLAN10
+AFCYDP
+AFMSCY
+AFURPO10
+AFUTDZ10
+AFUTHU
+AGALAM10
+AGLUAM10
+AHARFU
+AHCDLA
+AHDITX
+
+0.671
+0.095
+
+0.202
+0.127
+0.088
+0.059
+0.340
+0.092
+0.122
+0.080
+0.061
+
+0.677
+0.139
+0.354
+0.256
+0.420
+0.413
+0.306
+0.140
+0.247
+0.067
+0.109
+0.328
+0.120
+0.075
+0.185
+
+0.151
+0.491
+
+0.260
+0.141
+
+0.024
+0.077
+0.276
+0.357
+0.187
+0.180
+0.336
+0.080
+0.151
+
+0.024
+0.072
+0.238
+0.367
+0.262
+0.176
+0.258
+0.268
+0.050
+0.853
+0.194
+0.289
+0.226
+0.285
+0.263
+0.856
+0.096
+0.214
+0.381
+0.307
+0.093
+0.047
+0.773
+0.128
+
+0.092
+0.413
+0.665
+0.095
+0.208
+0.135
+0.091
+
+0.060
+0.345
+0.095
+0.120
+0.085
+0.062
+0.671
+
+0.138
+0.348
+0.258
+0.432
+0.415
+0.307
+0.138
+0.247
+0.067
+0.110
+0.330
+0.121
+0.077
+
+0.192
+
+Chemistry, Vol. 94, No. 26, 1990
+
+1°
+
+charges
+
+e
+
+0.247
+0.264
+0.111
+
+0.069
+0.199
+
+0.112
+0.085
+0.068
+0.404
+0.356
+0.141
+0.148
+0.069
+0.340
+0.168
+0.536
+0.178
+0.150
+0.023
+0.072
+0.293
+0.342
+0.174
+0.174
+0.463
+0.078
+0.148
+0.025
+0.070
+0.236
+
+0.387
+0.263
+0.177
+0.246
+0.269
+0.050
+0.856
+0.196
+0.345
+0.225
+
+0.281
+
+0.391
+
+0.250
+0.210
+0.262
+0.252
+0.050
+0.784
+0.164
+0.290
+
+0.291
+0.273
+0.871
+
+0.243
+0.257
+
+0.099
+0.215
+0.380
+0.302
+0.096
+0.054
+
+0.727
+0.220
+0.384
+0.398
+
+0.189
+0.154
+0.272
+0.265
+0.050
+0.830
+0.186
+0.288
+0.288
+0.294
+0.318
+0.898
+0.332
+0.208
+0.365
+0.305
+0.093
+0.044
+0.791
+0.128
+0.078
+0.413
+
+0.151
+
+0.174
+0.069
+0.342
+0.147
+0.465
+0.266
+0.135
+0.022
+0.075
+0.277
+0.355
+0.191
+
+0.186
+0.339
+0.086
+0.149
+0.023
+0.072
+0.251
+
+0.771
+
+0.125
+0.110
+0.411
+
+0.666
+0.097
+0.203
+0.130
+0.092
+0.058
+0.349
+0.093
+0.121
+
+0.082
+0.059
+0.666
+0.142
+0.354
+0.256
+0.419
+0.420
+0.307
+0.141
+
+0.246
+0.067
+0.109
+0.329
+0.122
+0.075
+0.185
+
+0.021
+
+0.241
+
+0.771
+
+0.091
+
+0.070
+0.767
+0.130
+0.078
+0.393
+0.650
+
+8907
+
+0.521
+
+0.091
+
+0.093
+
+0.200
+0.110
+0.700
+0.054
+0.326
+0.093
+0.118
+0.070
+0.067
+0.910
+0.118
+0.282
+0.249
+0.362
+0.397
+0.283
+0.122
+0.244
+0.065
+0.295
+0.320
+0.118
+0.067
+0.166
+
+0.221
+
+0.160
+0.636
+0.052
+0.315
+0.086
+0.147
+0.074
+0.060
+0.608
+0.134
+0.358
+0.265
+0.417
+0.518
+0.252
+0.135
+0.244
+0.063
+0.318
+0.296
+0.139
+0.078
+0.186
+
+=
+
+R
+
+charges
+
+e =
+
+0.257
+0.259
+0.110
+0.112
+0.081
+0.069
+0.403
+0.352
+0.138
+0.152
+0.068
+0.344
+0.179
+0.681
+
+0.178
+0.167
+0.023
+0.072
+0.310
+0.338
+0.184
+0.172
+0.221
+0.078
+0.173
+0.026
+0.070
+0.229
+0.417
+0.243
+0.153
+0.289
+0.266
+0.051
+0.810
+0.176
+0.308
+0.294
+0.290
+0.325
+1.003
+
+0.323
+0.208
+0.353
+0.302
+0.093
+0.045
+0.797
+0.130
+0.077
+0.418
+0.510
+0.094
+0.222
+0.185
+0.627
+0.054
+0.307
+0.081
+0.151
+
+0.077
+0.060
+0.614
+0.140
+0.359
+0.270
+0.416
+1.325
+
+0.229
+0.132
+0.243
+0.062
+0.090
+0.290
+0.140
+0.079
+0.185
+
+1
+
+DREIDING/A
+0.332
+0.417
+0.109
+0.107
+0.111
+
+0.115
+0.557
+0.464
+0.209
+0.319
+0.150
+0.277
+0.227
+0.786
+0.299
+0.773
+0.025
+0.277
+0.400
+0.515
+0.146
+0.199
+0.537
+0.089
+0.151
+0.025
+0.078
+0.311
+1.466
+
+0.310
+0.487
+0.529
+0.302
+0.052
+1.083
+
+0.189
+0.654
+0.495
+0.845
+0.225
+0.447
+0.402
+0.178
+0.464
+0.429
+0.139
+0.160
+0.473
+0.161
+
+0.280
+0.318
+0.792
+0.082
+0.174
+0.162
+0.558
+0.061
+
+0.650
+0.128
+0.156
+0.122
+0.071
+0.447
+0.659
+0.359
+0.205
+0.431
+0.351
+0.358
+0.165
+0.231
+0.115
+0.125
+0.568
+
+0.160
+0.083
+0.199
+
+“The standard force field has bonds of harmonic form (4), angles of harmonic theta form (10), torsions of single term form (13), inversions of spectroscopic
+form (29), nonbonds of Lennard-Jones form (32), and charges not included. Each other column is labeled with the change from the standard.
+
+8908
+
+The Journal
+
+of Physical Chemistry,
+
+Vol. 94, No. 26, 1990
+
+We envision a hierarchy of force fields21 where the simple
+versions (DRIEDING) allow rapid considerations of new structures and compositions while the more complex versions are tuned
+to accurately predict properties (e.g., vibrational frequencies) for
+particular systems. To describe vibrational frequencies accurately
+will certainly require more sophisticated force fields. Thus we
+must add angle-stretch, stretch-stretch, and angle-angle terms
+to the bond angle expansion (10) and additional terms to the
+torsion expression (13). Such terms are allowed in our programs
+and individual parameters have been optimized for specific
+molecules;22 however, we have not yet generalized these results
+to obtain a more generic force field suitable for vibrational frequencies. In addition, force constants and torsional barriers
+generally decrease going down a column of the periodic table.
+To treat main-group metals (Li, Be columns) and transition
+metals, the force fields must emphasize oxidation state and the
+
+interplay of attractive Coloumb interactions with short-range
+repulsion (van der Waals). Here the role of valence interactions,
+particularly the four-center terms (torsion and inversion), are less
+important, while the delocalization of charge characteristic of
+unsaturated systems becomes dominant. We leave these metallic
+systems to later developments.23
+
+Mayo et al.
+TABLE XI: Rotational Barriers (keal/mol) about Single Bonds
+exPeriment
+barrier0
+
+molecule0
+
+periodicity6
+V3
+
+CHj-CHj
+CH,-CH2CH3
+
+ch3-ch2ch2ch3
+ch3ch2-ch2ch3
+CH3-CH(CH3)2
+CH3-C(CH3)3
+
+ch3-ch2f
+ch3-ch2ci
+
+CH3-CH2Br
+CH3-CH2I
+
+ch3-cf3
+ch3-cci3
+f3c-cf3
+CH3-SiH3
+CH3-GcH3
+CH3-CH2SiH3
+CH3CH2-SiH3
+CH3-Si(CH3)3
+
+ch3-nh2
+
+ch3-nhch3
+CH3-N(CH3)2
+
+ch3-ph2
+
+IV. Applications
+A. Structures from the Cambridge Data Base. In order to
+provide a test of its general efficacy, we used the DREIDING
+force field to predict the structures of the 76 organic molecules
+in Figure (the first 76 structures of the Cambridge Data Base24
+having R factors below 0.05). This includes a variety of bonding
+situations with H, C, N, O, F, P, S, Cl, and Br (many structures
+involve phosphates, sugars, sulfates, sulfones, nitrates, carbonates,
+amides, etc.). Geometry optimizations were carried out using
+Version 2.20 on the four-processor Stardent Titan Subiograf
+percomputer workstation (using Fletcher-Powell minimization)
+while graphics manipulations were typically carried out on the
+Silicon Graphics 4D/25 workstation.
+In many of the 76 molecules there are strong intermolecular
+hydrogen bonds or salt bridges so that the structure of the free
+molecule might differ from that of the crystal. On the other hand,
+optimization of the structure of the molecule in the crystal environment is not a complete test of the force field because intermolecular packing, electrostatics, and hydrogen-bonding interactions will restrain the structures from changing. Consequently, in each case we extracted one complete molecule from
+the unit cell and optimized the structure in a vacuum.
+We carried out calculations on the complete set of molecules
+for several options of the DREIDING force field. The bonds were
+treated either as harmonic or Morse, the angles were treated as
+harmonic in either theta or cosine theta. The van der Waals terms
+were treated either as Lennard-Jones ¡2-6 or exponential-6, and
+the charges were either ignored or included. When included, the
+charges were calculated by using the Gasteiger17 procedure and
+with either c =
+or t = R. The cases in italics above were
+considered as the standard. In each case it is the simpler option.
+The results are in Table VIII. Thoreau would be happy. The
+simplest case leads to the most accurate result, trms = 0.235
+(where trms is the total rms error for all atoms of all 76 structures).
+Thus, use of Morse bonds increases trms to 0.236, cosine-angle
+terms increase trms to 0.238, while X6 van der Waals increases
+trms to 0.248.
+The simple DREIDING/A force field does reasonably well,
+with trms = 0.332. Here the error in bonds is about the same
+rms), but the error in angles is higher
+(up from 0.035 to 0.036
+(3.683° rms rather than 3.224°) and the error in torsions is much
+1
+
+1
+
+(20) Benson, S. W. Thermochemical Kinetics', Wiley: New York, 1976.
+(21) Rappé, A. K.; Goddard III, W. A.; Casewit, C. J.; Mayo, S. L,
+Unpublished results.
+(22) Dasgupta, S.; Goddard III, W. A. J. Chem. Phys. 1989, 90, 7207.
+(23) Li, M.; Goddard III, W. A. The Interstitial Electron Model for
+Metals. Phys. Rer. B, in press,
+(24) Kcnnard, O., et al. Cambridge Crystalographic Data Centre, University Chemical Laboratory, Lensfield Road, Cambridge, CBZ EW, UK.
+1
+
+ch3-oh
+ch3-sh
+
+CH3-SeH
+CF3-OF
+CH3-OCH3
+
+ch3-sch3
+CH3-SeCH3
+
+CH3—CH=CH2
+
+CH3—CH=0
+CH3—C(OH)=0
+CH3—C(OCH3)=0
+
+nh2-ch=o
+
+N(CH3)2—CH=0
+
+2.882 (0.010)4
+
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+
+3.4'
+3.4'
+3.8'
+3.9'
+4.7'
+
+V3
+
+1.7'
+1.24'
+2.625 (0.01 /
+1.979 (0.007)°'
+1.4'
+1.98'
+
+3.287
+
+3.623 (0.15)4
+3.16 (0.11)-'
+5.10 (0.3/
+
+3.92'
+
+3.62'
+4.4¿
+
+1.96'
+0.373 (0.003/
+0.445 (0.000)-'
+0.957 (0.05)"
+
+3.900'
+2.630
+2.099
+
+(0.007/
+(0.003/
+
+1.498 (0.001 )¿
+
+1.995'
+1.143-'
+0.481-'
+0.284-'
+18
+
+(3)'
+(1.5)'
+
+19.6
+
+barrier
+2.896
+3.376
+3.410
+3.822
+3.995
+5.071
+
+(0.03/
+
+3.68'
+3.68'
+
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V3
+V2
+V2
+
+calculated
+
+3.172
+3.487
+3.345
+3.336
+3.768
+4.851
+5.562
+
+2.296
+2.037
+3.805
+2.517
+3.191
+
+2.085
+2.916
+3.534
+1.957
+2.117
+2.376
+2.183
+3.608
+3.034
+2.902
+2.601
+0.753
+0.948
+1.026
+1.030
+24.506
+21.037
+
+"The dihedral pair is indicated by the single line. ‘Symmetry assumed in experimental analysis. °The value in parentheses indicates
+estimated experimental uncertainty. 4Reference 25. 'Reference 26.
+
+higher (13.309° rms rather than 8.948°).
+leads to worse results (0.257)
+Using explicit charges with e =
+while explicit charges with t = E (0.247) is worse than no charges.
+It appears that the major problem with charges is that intermolecular electrostatics are more important than intramolecular
+electrostatics. Thus, the molecules that need charges for a good
+description of structure need also to be treated as crystals. Thus,
+for these systems the actual error in our prediction of molecular
+structure (for isolated molecules) is probably much smaller than
+the trms quoted (which is based on the crystal structure).
+In Tables IX and X we tabulate the results for DREIDING
+using the standard options: the harmonic form of bond stretch
+(5), the harmonic theta form (11) for angle bend, the single term
+torsional form (13), the spectroscopic inversion (29), the Lennard-Jones 12-6 nonbond form (32), and no charges.
+For each molecule we list the rms error in the Cartesian coordinates (trms), the number of bond, angle, or torsion terms
+(nbnd, nang, ndih), the average error for each quantity (Abnd,
+Aang, Adih), the rms error for each quantity (Rbnd, Rang, Rdih),
+and the maximum error for each quantity (Mbnd, Mang, Mdih).
+The total errors over the whole set of 76 molecules are also listed.
+The total rms error is 0.235, while only five cases are worse than
+0.5: ACNPEC with 0.844, ACRAMS with 0.867, ACTYSN with
+0.774, ACXMPR with 0.671, and ADMOPM with 0.677. The
+first row of Table IX lists the total errors over the full data set.
+The average error in the bonds (out of 1483) is 0.009 Á, the
+average error in the angles (out of 2174) is 0,57°, and the average
+error in the torsions (out of 2188) is 0.23°, indicating that the
+general scales for these quantities are appropriate. The rms error
+in bonds is 0.035 Á, in angles is 3.2°, and in torsions is 8.9°.
+1
+
+Of the five bad
+
+cases
+
+ACNPEC, ACTYSN, and ACXMPR
+
+have intermolecular hydrogen bonds that disappear for an isolated
+molecule. Thus, for the crystalline form.29 the trms drops from
+
+The Journal
+
+DREIDING: A Generic Force Field
+
+of Physical
+
+Chemistry, Vol. 94, No. 26, 1990
+
+8909
+
+TABLE XIII: Relative Energies (kcal/mol) of Various
+
+TABLE XII: Conformational Energies (kcal/mol) for Various
+
+Stereoisomers”
+
+Molecules”
+butane, gauche/anti
+mcthylcyclohexane, axial/equatorial
+phenylcyclohexane, axial/equatorial
+fiuorocyclohexane, axial/equatorial
+chlorocyclohexane, axial/equatorial
+bromocyclohexane, axial/equatorial
+nitrocyclohexane, axial/equatorial
+cyclohcxanol, axial/equatorial
+1,4-dichlorocyclohexane, axial/equatorial
+methyl ethyl ether, gauche/anti
+cyclohexane, twist-boat/chair
+
+4,4,5-trimethyl-1,3-dioxolane, axial/equatorial
+
+“The higher energy form
+
+is listed
+
+caled
+
+system
+
+exptl
+
+caled
+
+0.76
+
+0.75
+
+-0.30
+
+-0.06
+
+1.8
+
+1.29
+4.51
+
+1,3-dimethylcyclobutane, cis/trans
+1,2-dimethylcyclohexane, cis/trans
+1,3-dimethylcyclohexane, cis/trans
+1,4-dimethylcyclohexane, cis/trans
+1,1,3,5-tetramethylcyclohexane, cis/trans
+bicyclo[3.3.0]octane, cis/trans
+decalin. cis/trans
+pcrhydroanthracene, cis-trans6
+pcrhydroanthracene, trans-anti-trans6
+pcrhydroanthracene, cis-anti-cis6
+pcrhydroanthracene, cis-syn-cis6
+
+exptl6
+
+system
+
+(0.2)
+
+3.00
+0.20
+0.40
+0.50
+1.20
+0.50
+0.20
+1.50
+5.7 (0.3)
+1.30
+
+0.33
+0.82
+0.52
+1.58
+
+0.25
+1.65
+1.56
+
+7.72
+1.48
+
+first. 6Reference 27.
+
+0.844 to 0.372 for ACNPEC, from 0.774 to 0.257 for ACTYSN,
+and from 0.671 to 0.308 for ACXMPR. For ADMOPM the
+experimental structure has a very short distance of 2.4 Á from
+a phosphate oxygen to the hydrogen on the aromatic carbon
+flanked by two nitrogens. This suggests a very strong electrostatic
+interaction (almost a hydrogen bond) that is underestimated since
+no explicit hydrogen bond term is included for this interaction.
+The crystalline form of ACRAMS has extensive intermolecular
+ring stacking that is lost in the isolated molecule. Thus, for the
+crystalline form, trms drops from 0.867 to 0.162.
+We conclude from these comparisons that the DREIDING
+force field provides useful predictions for structures. Although,
+in these benchmarks, use of charges leads to slightly worse results,
+we recommend that charges be used in all studies involving interactions of molecules.
+B. Conformations of Organic Molecules. In Table XI we show
+the single-bond rotational barriers calculated with DREIDING
+and compare with experiment.25,26 [Experimental results from
+the 1982 review (ref 25, denoted as d), should be considered more
+reliable than results only contained in the 1968 review (ref 26,
+denoted as e)] DREIDING uses only one value (2.0 kcal/mol)
+for explicit single-bond terms, but the trends are reasonably well
+reproduced. For alkanes the results are quite good (errors in
+kcal/mol of 0.01 for ethane, 0.0 for propane, 0.0 for both torsions
+in butane, 0.1 for isobutane, and 0.4 for neopentane). For
+CH3-CH2X, where X s a halogen, the predicted barrier is low
+by 0.1 to 0.3 kcal/mol. For C-Si and C-Ge barriers, the predicted
+barriers are about 50% too high, indicating that the torsional
+barrier should be smaller than 2.0 for the Si and Ge rows of the
+periodic table. The rotational barriers about peptide bonds are
+10-20% high (experimental 18 and 19.6 versus calculated 24.5
+and 21.0, respectively).
+In Table XII we show the difference in energy for various
+conformations of several molecules. The signs are always correct
+and the magnitudes are reasonably good.
+In Table XIII we show the difference in energy for various
+stereoisomers. The signs are always correct and the magnitudes
+are reasonably good.
+These results indicate that the torsional parameters are reasonably well-defined for organic systems and that the simple
+(25) Demaison, J., et al., Molecular Constants, Springer-Verlag: New
+York, 1982; Vol. 14 of Group II, Landolt-Bornstein Tables.
+(26) Lowe, J. P. Prog. Phys. Org. Chem. 1968, 6, 1.
+(27) Engler, E. M.; Andose, J. D.; Schleyer, P.V.R. J. Am. Chem. Soc.
+1973, 95, 8005.
+(28) This leads to SE = '/2K(69)2 for near linear, whereas (10a) would
+lead to hE
+/8C(M)\
+(29) These calculations were carried out using periodic boundary conditions with convergence acceleration13 allowing all atoms to optimize.
+~
+
+1
+
+6
+
+1.86
+
+0.98
+
+-2.00
+
+-1.34
+
+1.90
+
+1.28
+
+-3.70
+-6.4
+
+-4.13
+-11.05
+
+1.00
+
+1.76
+1.79
+
+2.80
+4.10
+5.60
+8.70
+
+8.79
+3.77
+6.58
+
+“The energy difference is that of the first species minus the second.
+Relative to trans-syn-trans.
+
+scheme of section HE incorporates the various features required
+for hydrocarbons. For simplicity we have used the same parameters for all other rows and columns of the periodic table. This
+is oversimplified as indicated by the increased errors for these
+
+systems but consistent with the DREIDING philosophy of not
+readjusting force constants for particular combinations of elements.
+C. Other Cases. To test the parameters for borons we calculated the structure of diborane (B2H6) where the bridging
+hydrogen is type H.b, and B_3 and H_ are used for the other atoms.
+Assuming each B.3 is bonded to four hydrogens (no formal B-B
+bond) leads to bond distances of 1.21 and 1.39 Á for terminal and
+bridging BH bonds (experimental66 1.201 and 1.320 Á). The
+calculated bond angle at the bridging H is 81.8° (experimental66
+83.8°) which leads to a B-B distance of 1.82 Á (experimental66
+1.763
+
+).
+
+V. Conclusions
+
+We find that DREIDING leads to accurate geometries and
+reasonably accurate barriers for various organic systems. As a
+result, we expect DREIDING to be useful in predicting structures
+involving new combinations of elements and should be easily
+extendable to new atoms. The current uncertainties in predicting
+the distribution of charges in molecules and in estimating the van
+der Waals interactions are limitations that we believe are as serious
+as the restricted set of parameters used in DREIDING.
+The next level of sophistication in developing generic force fields
+is to alter the parameters (force constants, barriers) to change
+smoothly as a function of rows and columns. We leave this for
+a later study.
+Acknowledgment. We thank Professor Anthony K. Rappé and
+Dr. Carla J. Casewit for providing stimulating discussions and
+carrying out tests of these force fields while on sabbatical at
+BioDesign. We thank Drs. Walter E. Reiher III and Paul W.
+Saxe for stimulating discussions and assistance in the calculations.
+We thank Adria McMillan and Carol Scrivnor for typing various
+versions of the text and Dr. Marie Ary for reformatting the text
+and preparing the 76 structures in the figures and the long tables
+
+(Tables VIII—XIII). Initial development of the DREIDING force
+field was carried out at Caltech and supported by a grant from
+the Department of Energy, Energy Conversion and Utilization
+Technologies Program (DOE-ECUT). More recent developments
+of the DREIDING force field were carried out at BioDesign.
+Registry No. B, 7440-42-8; C, 7440-44-0; N, 17778-88-0; O, 1777880-2; F, 14762-94-8; 1, 7429-90-5; Si, 7440-21-3; P, 7723-14-0; S,
+7704-34-9; Cl, 22537-15-1; Ga, 7440-55-3; Ge, 7440-56-4; As, 7440-38-2;
+Sc. 7782-49-2; Br, 10097-32-2; In, 7440-74-6; Sn, 7440-31-5; Sb, 744036-0; Te, 13494-80-9; I, 14362-44-8; Na, 7440-23-5; Ca, 7440-70-2; Fe,
+7439-89-6; Zn, 7440-66-6.
+
+

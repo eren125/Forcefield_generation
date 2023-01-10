@@ -1,0 +1,2688 @@
+J . Am. Chem. SOC.1992, 114, 10024-10039
+
+10024
+
+showing that bonding capabilities of silylene, germylene, and
+stannylene are considerably lower than those of methylene.
+The electronic states 7BI,corresponding to species with a formal
+u bond, lie above the 5BI states, and the SB,-7B, splitting diminishes regularly down the group. With the exception of MoCHz,
+the septets 7B1are first-order stationary points with an imaginary
+frequency associated with a wagging displacement of hydrogen
+atoms out of the molecular plane. Full optimization of these
+species leads to C, structures (states 7A’) considerably distorted
+from planarity. This anomalous behavior of the transition metal-metal bond increases down the group and is related to nonclassical distortions observed in the series of compounds Si2H6,
+Ge2H,, and Sn2H6. Because of such distortion, the ground state
+of the heaviest element of the series, MoSnH,, is found to be bent
+(es,
+state 7A’) instead of planar (e2,,
+state 5B,).
+Finally, comparison of naked MoM’H,, with their pentacarbonylated homologous (CO)5Mo=M’H,, reveals that, as far
+as Mo-M’ bond strengths and dissociation energies are concerned,
+
+the Fischer-type of complexation is stronger than the Schrock one.
+
+Note Added in Proof. After this paper was submitted for
+publication, we found out the work reported by Cundari and
+Gordonz8on the nature of the transition-metalsilicon double bond
+in which geometries and force constants of charged species
+CrM’H,+ (M’ = Si, Ge, and Sn)were also reported. The results
+and trends observed are in agreement with those found in the
+present work.
+Acknowledgment. This work was supported the Direccidn
+General de Investigacih Cientifica y Tknica of Spain, Project
+NO. PB89-0561.
+supplementary Material Available, Mulliken population analysis
+for all states of MoM’H, complexes are only available on request
+from the author (1 1 tables).
+~
+
+~~~~~~
+
+(28) Cundary, T. R.; Gordon, M. S. J . Phys. Chem. 1992, 96, 631.
+
+UFF, a Full Periodic Table Force Field for Molecular
+Mechanics and Molecular Dynamics Simulations
+A. K. Rappi$* C. J. Casewit,* K. S. Colwell, W. A. Goddard III,# and W. M. S k i d
+Contribution from the Department of Chemistry, Colorado State University, Fort Collins,
+Colorado 80523. Received March 23, 1992
+
+Abstract: A new molecular mechanics force field, the Universal force field (UFF), is described wherein the force field parameters
+are estimated using general rules based only on the element, its hybridization, and its connectivity. The force field functional
+forms, parameters, and generating formulas for the full periodic table are presented.
+
+I. Introduction
+Parameters and functional forms are the vital infrastructure
+of molecular mechanics and dynamics force fields. One of the
+most important uses of molecular dynamics and energy minimization is the estimation of structures for new molecules. Unfortunately, the popular force fields, based on the classic work
+in the field,’”-‘ are limited to particular combinations of atoms,
+for example, those of proteins, organics, or nucleic acids.laa-lf
+Progress has been made toward development of force fields which
+could, in principle, be extended to the entire periodic table though
+systematic procedures for obtaining the parameters have not been
+p r e ~ e n t e d . ~ Further,
+,~
+the angle bend function used in these
+standard force fields (harmonic in e) has the wrong shape to
+describe angular distortion approaching 180° for a nonlinear
+molecule. This functional form cannot describe the dynamics of
+inorganic materials such as zeolites which have equilibrium angles
+of -150° and distort thermally to 180° with barriers to inversion
+of 1 kcal/m01.~~In order to facilitate studies of a variety of
+atomic associations, we have developed a new force field using
+general rules for estimating force field parameters based on simple
+relations. This set of fundamental parameters is based only on
+the element, its hybridization, and connectivity. We refer to this
+new force field as a Universal force field (UFF). The angular
+distortion functional forms in UFF are chosen to be physically
+reasonable for large amplitude displacements. The force field
+functional forms and parameters are discussed in section 11.
+Results for select organic, main group inorganic, and transition
+
+-
+
+‘Calleo Scientific, 1300 Miramont Dr., Fort Collins, CO 80524.
+# Materials and Molecular Simulation Center, Beckman Institute, California Institute of Technology, Pasadena, CA 91 125.
+‘Shell Development Co., Westhollow Research Center, 3333 Hwy. Six
+South, Houston, TX 77082.
+
+metal complex structures are provided in section 111. Reference
+compounds used to obtain covalent radii for the elements are
+( I ) (a) Bixon, M.; Lifson, S. Tetrahedron 1967, 23, 769. (b) Lifson, S.
+J . Chim. Phys. Physicochim. Biol. 1968, 65, 40. (c) Lifson, S.; Warshel, A.
+J. Chem. Phys. 1968, 49, 51 16. (d) Levitt, M.; Lifson, S. J . Mol. B i d . 1969,
+46, 269. ( e ) Warshel, A.; Levitt, M.; Lifson, S. J . Mol. Spectrosc. 1970, 33,
+84. (0 Warshel, A.; Lifson, S. J . Chem. Phys. 1970, 53, 582. (g) Altona,
+
+C.; Sundaralingam, M. Tetrahedron 1970, 26, 925. (h) Altona, C.; Sundaralingam, M. J . Am. Chem. SOC.1970, 92, 1995. (i) Altona, C.; Hirschmann, H. Tefrahedron 1970,26,2173. u) Warshel, A. J . Chem. Phys. 1971,
+55, 3327. (k) Bartell, L. S.; Burgi, H. B. J . Am. Chem. SOC.1972,94, 5239.
+(I) Warshel, A. Isr. J . Chem. 1973, I I , 709. (m) Ermer, 0.;
+Lifson, S. J . Am.
+Chem. SOC.1973, 95, 4121. (n) Bartell, L. S.; Plato, V. J . Am. Chem. Soc.
+1973, 95, 3097. (0)Ermer, 0. Tetrahedron 1974,30, 3103. (p) Ermer, 0.;
+Lifson, S. J. Mol. Spectrosc. 1974,5l, 261. (9)Hagler, A. T.; Lifson, S. Acta
+Crystallogr., Sect. B 1974, 30, 1336. (r) Hagler, A. T.; Huler, E.; Lifson,
+S.J . Am. Chem. SOC.1974, 96, 5319. (s) Hagler, A. T.; Lifson, S. J . Am.
+Chem. Soc. 1974, 96, 5327. (t) Pertsin, A. J.; Nauchitel, V. V.; Kitaigorodskii,
+A. I. Mol. Cryst. Liq. Crysf. 1975, 31, 205. (u) Gcdleski, S. A,; Schleyer,
+P. v. R.; Osawa, E.; Inamoto, Y.; Fujikura, Y . J . Org. Chem. 1976, 41, 2596.
+(v) Fitzwater, S.; Bartell, L. S. J . Am. Chem. Soc. 1976, 98, 5107. (w) Bartell,
+L. S.; Fitzwater, S. J. Chem. Phys. 1977, 67, 4168. (x) Bartell, L. S. J . Am.
+Chem. SOC.1977.99.3279-82. (y) Kitaigorodskii, A. I. Chem. SOC.Reu. 7,
+133. ( 2 ) Melberg, S.; Rasmussen, K. J . Mol. Struct. 1979, 57, 215-39. (aa)
+Brooks, B. R.; Bruccoleri, R. E.; Olafson, B. D.; States, D. J.; Swaminathan,
+S.; Karplus, M. J . Comput. Chem. 1983, 4, 187. (bb) Nilsson, L.; Karplus,
+M. J . Compuf.Chem. 1986, 7, 591. (cc)Weiner, S. J.; Kollman, P. A,; Case,
+D. A.; Singh, U. C.; Ghio, C.; Alagona, G.; Profeta, S., Jr.; Weiner, P. J . Am.
+Chem. SOC.1984, 106, 765. (dd) Weiner, S. J.; Kollman, P. A.; Nguyen, D.
+T.; Case, D. A. J . Comput. Chem. 1986, 7, 230. (ee) Allinger, N. L. J . Am.
+Chem. SOC.1977, 99, 8127. (fr) Sprague, J. T.; Tai, J. C.; Yuh, Y.; Allinger,
+N. L. J . Comput. Chem. 1987, 8, 581.
+(2) Mayo, S. L.; Olafson, B. D.; Goddard, W. A,, 111J . Phys. Chem. 1990,
+94, 8897.
+( 3 ) Gajewski, J. J.; Gilbert, K. E.; McKelvey, J. In Aduances in Molecular
+Modelling, Liotta, D., Ed.; JAI Press: Greenwich, CT, 1990; Vol. 2, p 65.
+Clark, M. C.; Cramer, R. D., 111; Van Opdenbosch, N. J . Compuf.Chem.
+1989, 982.
+
+0002-786319211514-10024%03.00/0
+,
+0 1992 American Chemical Society
+I
+
+,
+
+UFF, a Full Periodic Table Force Field
+
+J. Am. Chem. SOC.,Vol. 114, No. 25, 1992 10025
+
+provided as supplementary material.
+
+rlJ =
+
+11. Universal Force Field
+The parameters used to generate the Universal force field
+include a set of hybridization dependent atomic bond radii, a set
+of hybridization angles, van der Waals parameters, torsional and
+inversion barriers, and a set of effective nuclear charges.
+A. Atom Types. The elements in the Universal force field
+periodic table are the atom types: atoms of the same type may
+only be similar chemically and physically, yet, as is the norm, they
+are treated identically in the force field. As reported here, UFF
+has 126 atom types. A five-character mnemonic label is used to
+describe the atom types. The first two characters correspond to
+the chemical symbol; an underscore appears in the second column
+if the symbol has one letter (e.g., N- is nitrogen, Rh is rhodium).
+The third column describes the hybridization or geometry: 1 =
+linear, 2 = trigonal, R = resonant, 3 = tetrahedral, 4 = square
+planar, 5 = trigonal bipyramidal, 6 = octahedral. Thus N-3 is
+tetrahedral nitrogen, while Rh6 is octahedral rhodium. The forth
+and fifth columns are used as indicators of alternate parameters
+such as formal oxidation state: Rh6+3 indicates an octahedral
+rhodium formally in the +3 oxidation state, e.g., Rh(NH3)63+.
+H b indicates a bridging hydrogen as in B2Hs 0 - 3 2 is an oxygen
+suited for framework oxygens of a zeolite lattice. P-3-q is a
+tetrahedral four-coordinate phosphorus used to describe organometallic coordinated phosphines, e.g., (Ph3P)2PtC12.The current
+UFF atom types are listed in Table I.
+B. Form of the Force Field. The potential energy of an arbitrary geometry for a molecule is written as a superposition of
+various two-body, three-body, and four-body interactions. The
+potential energy is expressed as a sum of valence or bonded interactions and nonbonded interactions:
+
++ E, + E, +
+
+E = ER + Eo
+
+Ev;dw
+
++ E,,
+
+The valence interactions consist of bond stretching (ER)discussed
+in section 1I.C below and angular distortions discussed in section
+1I.D. Included as angular distortions are bond angle bending (Eo),
+dihedral angle torsion (E&, and inversion terms (E,). The
+nonbonded interactions consist of van der Waals (Evdw)terms
+discussed in section 1I.E and electrostatic (Ee,)terms discussed
+in section 1I.F.
+C. Bond Stretch. The universal force field describes the bond
+stretch interaction as either a harmonic oscillator:
+ER
+
+= '/zklJ(r - rIJ)2
+
+(la)
+
+or as the Morse function:
+
+where kIJis the force constant in units of (kcal/mol)/A2, rlJ is
+the standard or natural bond length in angstroms, DIJis the bond
+dissociation energy (kcal/mol), and
+
+The Morse function is a more accurate description since it
+implicitly includes anharmonic terms near equilibrium (rIJ)and
+leads to a finite energy (DIJ)for breaking bonds. As with the
+Dreiding force field2 for calculations using the Morse stretch, the
+dissociation energy (DIJ)is set to n = 70 kcal/mol, where n is the
+bond order between centers I and J. The remaining parameters
+klJand rIJare discussed below, and the parameterization provided
+below is for the harmonic form of the bond stretch.
+1. Bond Radii. The natural bond length rIJis assumed to be
+the sum of atom type specific single bond radii, plus a bond order
+correction, plus an electronegativity correction:
+
++ rJ + rBO + rEy'
+
+(2)
+
+The single bond radii rI for H, C, N, and 0 were obtained by
+fitting a small set of organic molecules. The hydro en radius was
+fit to a methyl C-H distance in propane of 1.1 12
+The carbon
+radii C-3, CZ, and C-1 as well as the bond order proportionality
+constant (discussed below) were fit to propane, propene, and
+propyne C-C sin le, single, single, double, and triple bond distances of 1.526
+1.501 A, 1.458 A, 1.336 A, and 1.207 A,
+respectively. The radius for C R was fit to a benzene C-C distance
+of 1.399 A (bond order 11/2). The nitrogen radii N-3, N R , N Z ,
+and N-1 were fit to dimethylamine, N-methylformamide, dimethyldiazene, and acetonitrile C-N single, C-N single, N-N
+double, and C-N triple bond distances of 1.462 A, 1.459 A, 1.247
+A, and 1.157 A, respectively. The oxygen radii 0-3, 0-R, and
+02 were fit to methyl ether, methyl vinyl ether, and acetone C 4
+single, C-O single, and C-O double bond distances of 1.410 A,
+1.428 A, and 1.222 A, respectively. The radius for 0-1 was fit
+to a carbon monoxide C-O triple bond distance of 1.128 A. The
+radius for 0 - 3 2 was fit to a Si-0 single bond distance of 1.592
+8, in (C13Si)20. The radius of the bridging hydride H-b was fit
+to a B-H bridging bond distance of 1.320 8, in diborane.
+The radii of the group 1 elements were obtained from the
+corresponding homonuclear gas-phase dimers.4b Ca, Sr, and Ba
+radii were taken from the X-ray structures of cart~xylates,~
+using
+a fundamental 0 - 3 radius of 0.657 A. The Xe4+4 radius was
+obtained from square-planar XeF4, using a fundamental F radius
+of 0.668 A.6 The Kr4+4 radius was extrapolated from KrF2, based
+on the 0.07-A decrease in Xe-F bond lengths observed in XeF:
+relative to XeF,. The remaining noble gas radii were extrapolated.
+P-3-q was taken from the P-C bond distances of two Pt trimethylphosphine complexes, and S Z from [CH3CSH4Mo~-S)S]
+2.
+S-R was obtained from thiophene and Ag from pentafluorophenyl(ylide)silver(I), all using a fundamental C-R bond radius
+of 0.729 A.
+Radii for actinides Th6+4 through Am6+4 were extrapolated
+from the lanthanides, based on the 0.1-%Idifference between
+Nd6+3 and U6+4 reference compound radii. Radii for actinides
+Ac6+3 and Cm6+3 through Lw6+3 were extrapolated from the
+lanthanides, based on the approximately 0.05-Adifference in ionic
+radii between lanthanide+3 and actinide+3 halides.'
+For the remaining elements, the single bond radii were obtained
+directly from experimental structures of compounds containing
+an element-carbon single bond using a fundamental C-3 bond
+radius of 0.757 A, or were interpolated. Gas-phase experimental
+structures were normally taken from published compilation^;^,^
+X-ray structures were obtained by searching the Cambridge data
+base.1° A listing of the raw bond distances, the compounds they
+were taken from, and the literature sources are collected in the
+supplementary material.
+The initial observation and subsequent understanding of many
+important structural effects in chemistry arose by comparing
+=standard'' bond distances (from a summation of covalent radii)
+with experimental bond distances. These structural-electronic
+effects include electronegativity, resonance, metal-ligand
+bonding, metal-ligand ?r back-bonding, and the trans influence.
+A force field capable of fully predicting molecular structure must
+reproduce these effects. In order to account for these effects and
+
+1.
+
+8,
+
+( 5 ) van der Sluis, P.; Schouten, A.; Spek, A. L . Acta Cryst. 1987, C43,
+1922. Jones, P. G. Acta Cryst. 1984, C40, 804. Yokomori, Y.; Raherty, K.
+A.; Hodgson, D. J. Inorg. Chem. 1988, 27, 2300.
+(6) Levy, H. A.; Argon, P. A. J. Am. Chem. SOC.1963, 85, 241. Templeton, D. H.; Zalkin, A.; Forrester, J. D.; Williamson, S.M. J . Am. Chem.
+SOC.1963, 85, 242.
+(7) Brown, D. Halides of Lanthanides and Actinides; Wiley-Interscience:
+New York, 1968.
+(8) Hellwege, K.-H. Landolt-Boernstein Numerical Data and Functional
+Relatiomhips in Science and Technology; Springer Verlag: Berlin, 1976; Vol.
+1
+
+(4) (a) Nicholas, J. B.; Hopfinger, A. J.; Trouw, F. R.; Iton, L. E. J. Am.
+Chem. SOC.1991, 113, 4792. (b) Huber, K. P.; Hertzberg, G. Molecular
+Spectra and Molecular Siructure. IV. Constants o j Diatomic Molecules;
+Van Nostrand Reinhold: New York, 1979.
+
+(9)Harmony, M. D.; Laurie, V. W.; Kuczkowski, R. L.;Schwendeman,
+R. H.; Ramsay, D. A.; Lovas, F. J.; Lafferty, W. J.; Maki, A. G. J . Phys.
+Chem. Ref. Data 1979, 8, 619.
+(10) Kennard, 0. Cambridge Crystallographic Data Centre, University
+Chemical Laboratory, Lensfield Rd., Cambridge, CBZ 1 EW, UK.
+
+RappP et al.
+
+10026 J . Am. Chem. SOC.,Vol. 114, No. 25, 1992
+Table I. Atomic Data
+valence
+nonbond
+bond angle distance energy scale
+XIa
+DI'
+f
+atom type
+rla
+:e
+H0.354 180.0
+2.886
+0.044 12.0
+2.886
+0.044 12.0
+H-b
+0.460
+83.5
+0.056
+15.24
+He4+4
+0.849
+90.0
+2.362
+0.025
+12.0
+1.336 180.0
+2.45 1
+Li
+12.0
+1.074 109.47
+2.745
+0.085
+Be3+2
+0.180
+12.052
+4.083
+B-3
+0.838 109.47
+0.180 12.052
+4.083
+B-2
+0.828 120.0
+0.105
+3.851
+12.73
+0.757 109.47
+c-3
+0.105 12.73
+C-R
+0.729 120.0
+3.851
+0.105
+0.732 120.0
+3.851
+12.73
+c-2
+0.105
+3.851
+12.73
+c-1
+0.706 180.0
+0.069
+13.407
+N-3
+0.700 106.7
+3.660
+N-R
+0.069 13.407
+0.699 120.0
+3.660
+0.069
+3.660
+13.407
+N-2
+0.685 111.2
+0.069 13.407
+N-1
+0.656 180.0
+3.660
+0.060 14.085
+0-3
+0.658 104.51
+3.500
+0-3-2
+0.060 14.085
+0.528 146.0
+3.500
+0.060 14.085
+0.680 110.0
+3.500
+0-R
+0.060 14.085
+3.500
+0-2
+0.634 120.0
+0.060
+14.085
+0-1
+0.639 180.0
+3.500
+0.050 14.762
+0.668 180.0
+3.364
+FNe4+4
+0.042
+0.920
+90.0
+3.243
+15.440
+0.030 12.0
+2.983
+Na
+1.539 180.0
+0.1 11 12.0
+Mg3+2
+1.421 109.47
+3.02 1
+0.505
+1.244 109.47
+4.499
+11.278
+A13
+0.402
+1.1 17 109.47
+4.295
+12.175
+Si3
+0.305 13.072
+4.147
+P-3+3
+1.101
+93.8
+0.305 13.072
+4.147
+P-3+5
+1.056 109.47
+0.305 13.072
+4.147
+P_3+q
+1.OS6 109.47
+0.274 13.969
+1.064
+92.1
+4.035
+S-3+2
+0.274 13.969
+4.035
+s-3+4
+1.049 103.20
+0.274 13.969
+S-3+6
+1.027 109.47
+4.035
+S-R
+0.274 13.969
+1.077
+92.2
+4.035
+0.274 13.969
+0.854 120.0
+4.035
+s-2
+0.227
+3.947
+14.866
+CI
+1.044 180.0
+0.185
+3.868
+15.763
+Ar4+4
+1.032
+90.0
+0.035 12.0
+K
+1.953 180.0
+3.812
+Ca6+2
+0.238 12.0
+1.761
+90.0
+3.399
+0.019
+1.513 109.47
+3.295
+12.0
+sc3+3
+0.017
+12.0
+Ti3+4
+1.412 109.47
+3.175
+0.017
+Ti6+4
+1.412
+90.0
+3.175
+12.0
+v-3+5
+0.016
+1.402 109.47
+3.144
+12.0
+0.015 12.0
+1.345
+90.0
+3.023
+Cr6+3
+0.013
+2.961
+12.0
+Mn6+2
+1.382
+90.0
+Fe3+2
+0.013 12.0
+1.270 109.47
+2.912
+Fe6+2
+0.013
+1.335
+90.0
+2.912
+12.0
+0.014 12.0
+1.241
+90.0
+2.872
+Co6+3
+Ni4+2
+0.015
+1.164
+90.0
+2.834
+12.0
+Cu3+ 1
+0.005
+1.302 109.47
+3.495
+12.0
+0.124 12.0
+1.193 109.47
+2.763
+Zn3+2
+11.0
+Ga3+3
+0.415
+1.260 109.47
+4.383
+Ge3
+0.379 12.0
+1.197 109.47
+4.280
+As3+3
+0.309 13.0
+1.211
+92.1
+4.230
+0.291 14.0
+1.190
+Se3+2
+90.6
+4.205
+Br
+0.251 15.0
+1.192 180.0
+4.189
+4.141
+Kr4+4
+0.220 16.0
+1.147
+90.0
+12.0
+Rb
+0.04
+2.260 180.0
+4.114
+Sr6+2
+0.235 12.0
+2.052
+90.0
+3.641
+Y-3+3
+0.072 12.0
+1.698 109.47
+3.345
+Zr3+4
+1.564 109.47
+0.069 12.0
+3.124
+Nb3+5
+0.059
+1.473 109.47
+12.0
+3.165
+Mo6+6
+1.467
+90.0
+0.056 12.0
+3.052
+Mo3+6
+1.484 109.47
+0.056 12.0
+3.052
+Tc6+5
+1.322
+90.0
+2.998
+12.0
+0.048
+.A. *Degrees. Ckcal/mol. dCharge.
+
+effective
+charge
+ZISd
+
+0.712
+0.712
+0.098
+1.026
+1.565
+1.755
+1.755
+1.912
+1.912
+1.912
+1.912
+2.544
+2.544
+2.544
+2.544
+2.300
+2.300
+2.300
+2.300
+2.300
+1.735
+0.194
+1.08 1
+1.787
+1.792
+2.323
+2.863
+2.863
+2.863
+2.703
+2.703
+2.703
+2.703
+2.703
+2.348
+0.300
+1.165
+2.141
+2.592
+2.659
+2.659
+2.679
+2.463
+2.43
+2.43
+2.43
+2.43
+2.43
+1.756
+1.308
+1.821
+2.789
+2.864
+2.764
+2.519
+0.452
+1.592
+2.449
+3.257
+3.667
+3.618
+3.40
+3.40
+3.40
+
+to exploit the wealth of literature data expressed in terms of
+covalent radii and bond orders, a Pauling-type" bond order
+correction fBO is used to modify the single bond radii
+f B 0 = -X(fl
+f J ) In (n)
+(3)
+
++
+
+(1 1) Pauling, L. The Nature o f t h e Chemical Bond; Cornell University
+Press: lthaca, NY, 1960; p 239.
+
+atom type
+Ru6+2
+Rh6+3
+Pd4+2
+Agl+l
+Cd3+2
+In3+3
+Sn3
+Sb3+3
+Te3+2
+
+IXe4+4
+cs
+Ba6+2
+La3+3
+Ce6+3
+Pr6+3
+Nd6+3
+Pm6+3
+Sm6+3
+Eu6+3
+Gd6+3
+Tb6+3
+Dy6+3
+Ho6+3
+Er6+3
+Tm6+3
+Yb6+3
+Lu6+3
+Hf3+4
+Ta3+5
+W-6+6
+w-3+4
+W-3+6
+Re6+5
+Re3+7
+Os6+6
+Ir6+3
+Pt4+2
+Au4+3
+Hg1+2
+T13+3
+Pb3
+Bi3+3
+Po3+2
+At
+Rn4+4
+Fr
+Ra6+2
+Ac6+3
+Th6+4
+Pa6+4
+U-6+4
+Np6+4
+Pu6+4
+Am6+4
+Cm6+3
+Bk6+3
+Cf6+3
+Es6+3
+Fm6+3
+Md6+3
+No6+3
+Lw6+3
+
+valence
+nonbond
+bond
+angle distance energy
+XIa
+D{
+rIa
+:e
+1.478
+90.0
+2.963
+0.056
+1.332
+2.929
+90.0
+0.053
+1.338
+2.899
+90.0
+0.048
+1.386 180.0
+3.148
+0.036
+2.848
+1.403 109.47
+0.228
+1.459 109.47
+4.463
+0.599
+1.398 109.47
+4.392
+0.567
+1.407
+4.420
+91.6
+0.449
+1.386
+4.470
+90.25
+0.398
+4.50
+1.382 180.0
+0.339
+1.267
+4.404
+90.0
+0.332
+2.570 180.0
+4.517
+0.045
+2.277
+3.703
+90.0
+0.364
+1.943 109.47
+3.522
+0.017
+90.0
+1.841
+3.556
+0.013
+90.0
+1.823
+3.606
+0.010
+90.0
+1.816
+0.010
+3.575
+90.0
+3.547
+0.009
+1.801
+0.008
+90.0
+1.780
+3.520
+90.0
+1.77 1
+3.493
+0.008
+90.0
+1.735
+0.009
+3.368
+0.007
+90.0
+1.732
+3.451
+0.007
+1.710 90.0
+3.428
+0.007
+1.696 90.0
+3.409
+0.007
+90.0
+1.673
+3.391
+90.0
+1.660
+3.374
+0.006
+90.0
+1.637
+0.228
+3.355
+0.041
+90.0
+1.671
+3.640
+0.072
+1.611 109.47
+3.141
+0.081
+1.511 109.47
+3.170
+0.067
+90.0
+1.392
+3.069
+1.526 109.47
+0.067
+3.069
+0.067
+1.380 109.47
+3.069
+0.066
+90.0
+1.372
+2.954
+1.314 109.47
+2.954
+0.066
+0.037
+90.0
+1.372
+3.120
+90.0
+1.371
+0.073
+2.840
+0.080
+90.0
+1.364
+2.754
+0.039
+90.0
+1.262
+3.293
+2.705
+0.385
+1.340 180.0
+4.347
+0.680
+1.518 120.0
+0.663
+1.459 109.47
+4.297
+0.518
+90.0
+1.512
+4.370
+90.0
+1.50
+4.709
+0.325
+0.284
+1.545 180.0
+4.750
+0.248
+90.0
+1.420
+4.765
+0.050
+2.880 180.0
+4.90
+0.404
+90.0
+2.512
+3.677
+0.033
+90.0
+1.983
+3.478
+0.026
+90.0
+1.721
+3.396
+0.022
+90.0
+1.711
+3.424
+0.022
+90.0
+1.684
+3.395
+0.019
+90.0
+1.666
+3.424
+0.016
+90.0
+1.657
+3.424
+0.014
+90.0
+3.381
+1.660
+0.013
+1.801 90.0
+3.326
+90.0
+1.761
+3.339
+0.013
+0.013
+90.0
+1.750
+3.313
+0.012
+90.0
+1.724
+3.299
+0.012
+90.0
+1.712
+3.286
+0.01 1
+90.0
+1.689
+3.274
+0.01 1
+3.248
+1.679 90.0
+0.01 1
+3.236
+90.0
+1.698
+
+scale
+{
+
+12.0
+12.0
+12.0
+12.0
+12.0
+11.0
+12.0
+13.0
+14.0
+15.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+11.0
+12.0
+13.0
+14.0
+15.0
+16.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+12.0
+
+effective
+charge
+
+ZI'~
+3.40
+3.508
+3.21
+1.956
+1.65
+2.07
+2.961
+2.704
+2.882
+2.65
+0.556
+1.573
+2.727
+3.30
+3.30
+3.30
+3.30
+3.30
+3.30
+3.30
+3.30
+3.30
+3.30
+3.416
+3.30
+3.30
+2.618
+3.271
+3.921
+4.075
+3.70
+3.70
+3.70
+3.70
+3.70
+3.70
+3.731
+3.382
+2.625
+1.75
+2.068
+2.846
+2.470
+2.33
+2.24
+0.583
+1.847
+2.92
+3.90
+4.202
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+3.90
+
+where the proportionality constant X = 0.1332 was determined
+for the set propane, propene, and propyne simultaneously with
+the (2-3, C-2, and C-1 radii. The single bond covalent distance
+is included in the correction to provide the correct metric
+throughout the periodic table. The amide C-N bond order of 1.41
+was used in order to reproduce the amide C-N bond distance of
+1.366 A in N-methylformamide, the C-R and N-R single bond
+radii having been determined above. A fractional amide bond
+
+UFF, a Full Periodic Table Force Field
+
+J. Am. Chem. SOC.,Vol. 114, No. 25, 1992 10027
+
+order is reasonable given the polar nature of the C-O T bond and
+the resulting parital delocalization of the nitrogen A lone pair onto
+carbon. Intra-ring bonds of aromatic rings are assigned bond
+orders based on the number of A electrons, resulting in a bond
+order of 1.5 for normal aromatic rings.
+The electronegativity correction rEN of O'Keeffe and Brese12
+rEN
+
+=~
+
+J ( f i- &)2/(~IfI
+
++ XA)
+
+(4)
+
+is used directly with the previously reported GMP electronegativity
+setal3 For example, for a Si*-3-2
+bond the electronegativity
+correction is 0.0533 A.
+2. Force Constants. The bond stretching force constants are
+atom based and are obtained from a previously reported generalization of Badger's rules.14 Consider the following simple
+description of the bounding curve
+ER = Eo - FR - G(ZI*Zj*/R)
+(5)
+where F is to be determined, ZI* and ZJ* are effective charges,
+and G = 332.06 so that R is in A, Z is in electron units, and E R
+is in kcal/mol. The assumption is that the bonding is dominated
+by attractive ionic terms (even for H2) plus short-range Pauli
+repulsions (approximated as linear). The condition for an
+equilibrium structure leads to
+0 = (aE,/aR)o = F - G(ZI*Zj*/Rz)
+
+or
+F = G(ZI*Zj*/fIj2)
+The force constant then becomes
+
+The ZI* (effective atomic charges, in electron units) are leastsquares tit to a set of diatomic data representing 56 elements from
+Huber and Herzberg."b The ZI* for H is set at the value for H2,
+and H-C is assigned a weight of 10 in the least-squares optimization. The remaining ZI* (effective atomic charges) are
+interpolated or extrapolated. The bond radii and effective charges
+are listed in Table I. For reference, the UFF C-N amide force
+constant of 1293 kcal/mol.A2 can be compared to the corresponding AMBERldd force constant of 980 kcal/mol-A2 and
+CHARMMIbbforce constant of 674 kcal/mol.A2.
+D. Angular Distortions. General Fourier expansions (see eq
+7) are employed in the Universal force field to describe all angular
+distortions because the expansions can be constructed (1) to have
+derivatives that are singularity free, (2) to have the appropriate
+distortions for the large amplitude motions found in molecular
+dynamics simulations, and (3) so that the C,,coefficients can be
+straightfonvardly c h a m to satisfy appropriate, physically justified,
+boundary conditions.
+m
+
+E , = K C Cncos ny
+n=O
+
+(7)
+
+1. Angle Bend. In UFF, the angle bend term is described with
+a small cosine Fourier expansion in 8:
+
+where the coefficients C, are chosen to satisfy appropriate
+boundary conditions including that the function have a minimum
+at the natural bond angle 0,. The simple m i n e Fourier expansion
+was chosen over the more common harmonic in 8 expansion'
+because of the better description of large amplitude motions" as
+found in molecular dynamics simulations. The Fourier expansion
+was chosen over the mathematically equivalent (for the general
+nonperiodic case) harmonic in cosine 6 expansion15 owing to the
+straightforward and consistent extension of a Fourier expansion
+to symmetric/periodic coordination environments found in metallic
+complexes such as square planar or octahedral. Additionally, as
+discussed below, the Fourier expansion representation has a sound
+physical basis.
+The simple cosine Fourier expansion was selected over the
+SHAPESI6 Fourier expansion form
+E~ = KIjK [ I
+
+E C,, cos ne
+n-0
+
+(94
+
+where
+and
+Q =
+
+- pe,
+
+(9c)
+
+due to the more smoothly defined description for large 0, for the
+simple cosine Fourier expansion. As is apparent from eq 9b, as
+Bo approaches A, p , the periodicity, will increase rapidly (owing
+to the increasingly smaller denominator). Consider, for example,
+S i U S i linkages in zeolite structures where eo is approximately
+145'. If 0, indeed equals 145', the function is smaller by a factor
+of 10 at 0' than it is at 180°, whereas if eo = 135' or 150°, the
+function is equal valued a t 0' and 180'. When Bo = 144', the
+potential is zero a t 8, = 0'. This wild oscillation is caused by p
+passing through the integer value, 5, at 144'.
+For linear, trigonal-planar, square-planar, and octahedral coordination environments, two-term Fourier expansions are used
+each with a n = 0 term Coand a n = 1, 3,4, or 4 term, respectively.
+Thus eq 8 simplifies to:
+KIJK
+EO = - [ l - COS (ne)]
+n2
+
+These terms are precisely the same terms as are used in the
+SHAPES force field for these symmetric/periodic coordination
+environments.
+For the general nonlinear case, for example, for water, the bend
+function should have a minimum with Eo = 0 at 8 = Bo = 104So,
+the second derivative at Bo equal to the force constant, and a
+maximum at 180'. For the proper choice of angular terms,
+consider the set of group 6 hydrides H20, H2S,H2Se, H2Te, and
+H2Po. In general, group 6 elements (0,S,Se, Te, and Po) use
+orthogonal unpaired p orbitals to form covalent bonds, this suggests
+equilibrium bond angles for the hydrides of 90' and that a cos
+28 angle term will describe angular distortion. For H20, however,
+the hydrogens are sufficiently close to each other that Pauli repulsions cause the bond angle to open up to 104.5'. This steric
+repulsion, with constant bond distance, is a maximum at 0' and
+a minimum at 180°, suggesting the addition of a cos 0 angle term
+to the cos 28 discussed above. This leads to a three-term Fourier
+expansion (for the general nonlinear case)
+
+m
+
+Eo = KljK
+
++ COS (pe + *)I
+
+E~ = KIjK[CO
+
+(8)
+
++ cICOS e + c2COS 281
+
+(11)
+
+with the three expansion coefficients defined in:
+(12) OKeefe, M.; Brese, N . E. J . Am. Chem. SOC.1991, 113, 3226.
+(13) RappE, A. K.; Goddard, W. A., I11 J . Phys. Chem., submitted for
+publication.
+(14) Badger, R. M . J . Chem. Phys. 1934, 2, 2128-131. Badger, R. M.
+Ibid. 1935, 3, 710-714. Pearson, R. G. J . Am. Chem. SOC.1977, 99,
+4869-4875. Ohwada, K.J . Chem. Phys. 1980, 72, 1-6. Ohwada, K.Ibid.
+1980, 72, 3663-3668. Ohwada, K.Ibid. 1980, 73, 5459-5463. Ohwada, K.
+Ibid. 1981, 75, 1309-1312. Chang, C.-A. J . Phys. Chem. 1983, 87, 1694.
+Barbiric, D. A.; Castro, E. A.; Fernandez, F. M. J . Chem. Phys. 1984, 80,
+289-292. Ohwada, K.Ibid. 1984, 80, 1556-1561. Halgren, T . A. J . Am.
+Chem. SOC.1990, 112, 4710.
+
+C2 = 1/(4 sin2 e,)
+
+CI = -4c2 cos 0,
+co= c2(2 COS^ eo + 1 )
+
+(12)
+
+It is interesting that, developed in this manner, the CI coefficient
+(15) Karasawa, N.; Dasgupta, S.; Goddard, W. A., I11 J . Phys. Chem.
+1991, 95, 2260.
+
+(16) Allured, V . S.; Kelly, C. M.; Landis, C. R. J . Am. Chem. Soc. 1991,
+113, 1 .
+
+RappZ et al.
+
+10028 J. Am. Chem. SOC.,Vol. 114, No. 25, 1992
+gives a measure of intrinsic 1,3 steric repulsion.
+a. Standard Bond Angles. The natural angles for the group
+15, 17, and 18 main group elements are obtained from standard
+reference structures of the parent hydrides. Thus 0 - 3 has Bo =
+104.5' from HzO,
+while S3 has Bo = 92.2' from HzS. Exceptions
+O R , and N-2. The bond angles for 0-32,O-R,
+include 0-32,
+and N-2 are fit to (C13Si)z0,methyl vinyl ether, and dimethyldiazene angles of 146O, 118.3', and 112.3', respectively. Where
+structural data are unavailable, the natural angles are extrapolated
+from the element above it in the periodic table. The remaining
+elements are all assumed to have regular octahedral, tetrahedral,
+trigonal, or linear structures. The natural angles are collected
+in Table I.
+b. Force Constants. The angle bend force constants are generated using a previously reported angular generalization of
+Badger's r ~ 1 e s . lBasically,
+~
+the functional form (6) is assumed
+to extend to the I and K atoms of a angle bend for polyatomics,
+and the effective charges listed in Table I are used. Thus starting
+with
+Eo = Eo - FB - @(z1*zK*/rIK)
+where F is to be determined and
+
++
+
+rIKz = rlJZ rJKZ- 2rlJrJKcos
+
+e
+
+taking the second derivative of E with respect to 0 yields:
+
+Table 11. Torsional Barriers (kcal/mol\
+~
+
+~~
+
+~
+
+~~
+
+~~
+
+bond
+experimental
+calculated
+CHj-CH,
+2.93a
+2.90
+CH3-SiH3
+1.7"
+1.7
+CH3-GeH3
+1.2"
+1.2
+CH3-SnH3
+0.65"
+0.65
+CH3-NH2
+2.0"
+2.0
+CH3-PH2
+2.0"
+2.0
+CH3-AsH2
+1 .5"
+1.5
+CH3-OH
+1.1"
+1 .o
+CH,-SH
+1.3"
+1.3
+CH3-SeH
+1 .O"
+1 .o
+trans HO-OH
+1.1"
+1.7
+cis HO-OH
+7.0"
+6.6
+trans HS-SH
+6.8"
+6.8
+cis HS-SH
+7.2"
+7.2
+anisole
+4.6b
+3.6
+thioanisole
+1 .Ob
+1.7
+acetaldehyde
+1.17"
+0.83
+isoprene
+2.7lC
+1.56
+ethylbenzene
+1.16'
+3.16
+"Lister, D. G.; Macdonald, J. N.; Owen, N. L. Internal Rotation
+and Inversion; Academic Press: New York, 1978; pp 164, 165.
+*Schaefer, T.; Penner, G. H. Can. J. Chem. 1988, 66, 1641.
+CCompton,D. A. C.; George, W. 0.;Maddams, W. F.J . Chem. SOC.,
+Perkin Trans. 2 1976, 1666. dMiller, A.; Scott, D. W. J. Chem. Phys.
+1978, 68, 1317.
+~
+
+Table 111. sp3 Torsional Barrier Parameters
+
+where the distances rlJand rJK are as defined in (2) above and
+0 is an undetermined parameter. From an examination of the
+bending vibrational frequences of AX4,A = C, S,Ge, and Sn and
+X = H, F, C1, Br, and I, it was determined that
+8 = 664.12/r1jrj~
+leads to the best compromise functional form. For reference, the
+UFF C-N-C amide force constant of 105.5 kcal/mol.rad2 can
+be compared to the corresponding AMBERIdd force constant of
+100 kcal/mol.radz and CHARMMIbb force constant of 70
+kcal/mol.radz.
+2. Torsion. The torsional terms for two bonds IJ and KL
+connected via a common bond JK is described with a small cosine
+Fourier expansion in 6:
+m
+
+E,
+
+KIJKLE Cn COS ~ + I J K L
+n-0
+
+(14)
+
+where KljKL and the coefficients C,, are determined by the rotational barrier V,, the periodicity of the potential, and the equilibrium angle. For a given central J-K bond, all torsions about
+this bond are considered, with each torsional barrier being divided
+by the number of torsions present about this J-K bond. The
+present torsional periodicities and minima are the same as those
+described in the recently published DREIDING force fieldZwith
+modifications to the torsional barriers V, to account for periodic
+trends. Using the present Fourier representation (eq 14) for the
+torsional potential, Co= 1, C,, = --cos n&, and Km = l/zV, which
+yields
+E,
+
+&V,[ 1
+
+- COS n+o COS n+]
+
+(15)
+
+Specific general cases include (a)j = an sp3 center and k = an
+sp3 center where n = 3 and +o = 180' (or 60°), (b) j = an spz
+center and k = an sp3 center where n = 6 and +o = 0' (V, = 1
+kcal/mol), and (c) j = an spz center and k = an spz center of
+variable bond order where n = 2 and +o = 180' (or 60').
+The torsional barriers involving a pair of sp3centers (V, 3) are
+fit to experimental data for the parent hydride compoun& (see
+Table 11) with the torsional barriers obtained from:
+Vspl
+
+fi
+
+(16)
+
+atom
+type
+C-3
+N-3
+0-3
+Si3
+P-3
+
+VI
+(kcal/mol)
+2.119
+0.450
+0.018
+1.225
+2.400
+
+atom
+type
+S-3
+Ge3
+As3
+Se3
+Sn3
+
+VI
+(kcal/mol)
+0.484
+0.701
+1.5
+0.335
+0.199
+
+atom
+type
+Sb3
+Te3
+Pb3
+Bi3
+PO3
+
+v,
+
+(kcal/mol)
+1.1
+0.3
+0.1
+
+1 .o
+0.3
+
+The V; values are collected in Table 111.
+Torsional barriers involving a pair of sp2 centers ( Vsp2) with
+variable bond order are assigned barriers using eq 17 where BOjk
+is the bond order between atoms j and k.
+
+Vsp2= 5-(
+
+1
+
++ 4.18 In (BOjk))
+
+The constants 5 and 4.18 were obtained from fitting the low energy
+a,, bl,, and bzg vibrational modes of ethylene,IE the gas-phase
+barrier of N,N-dimethylformamide ( A P = 19.7 kcal/mol),lg and
+the low-energy ezu,a,,, and b2gvibrational modes of benzene.ls
+The vj constants are assigned values of 2, 1.25,0.7,0.2,and 0.1
+for the first through sixth periods (based roughly on the group
+4 V, values discussed above), respectively.
+As in the DREIDING force field,z the torsional terms for sp3
+group 6 central atoms are treated as exceptions based on valence
+considerations which suggest that the bonds have a dihedral angle
+of 90'. For a single bond involving a pair of group 6 sp3 atoms,
+eq 16 is used with VJ = 2 kcal/mol for oxygen and VJ = 6.8
+kcal/mol for the remaining group 6 elements (fit for HZOzand
+HzSzZO).For this case the periodicity (n)is 2 and the equilibrium
+angle +o is 90'. For a single bond involving a sp3 atom of the
+oxygen column and an sp2 or resonant atom of another column,
+eq 17 is used directly. For this case the periodicity (n) is 2 and
+the equilibrium angle dois 90'. The torsional potentials for central
+bonds involving non-main-group elements were assigned a value
+of zero. Torsional potentials for central bonds involving sp-hy( 1 7) The inadequacy of a harmonic in B representation has been reported
+previously; see, for example, Figure 1 of ref 16 and Figure 3 of ref 4a. An
+additional discussion of problems with angular potentials is provided in:
+Swope, W. C.; Ferguson, D. M . J . Comput. Chem. 1992, 13, 585.
+(1 8) Shimanouchi, T. Tables of Molecular Vibrational Frequencies;
+NSRDS-NBS 39; US. Government Printing Office: Washington, DC.; 1972.
+(19) Ross, B. D.; True, N . S.J . Am. Chem. SOC.1984, 106, 2451.
+(20) Lister, D. G.; Macdonald, J. N.; Owen, N . L. Internal Rotation and
+Inuersion; Academic Press: New York, 1978; pp 164-165.
+
+UFF, a Full Periodic Table Force Field
+bridized centers X-1 were assigned a value of zero. In addition,
+when angles about the central atoms approach 180°, the potential
+energy and derivative terms are set to zero as is conventionally
+done.
+The remaining exception is for the case of a single bond involving one sp2 atom and one sp3 atom where the sp2 atom is
+bonded to another sp2 atom (e.g., propene). For this case we use
+Vo = 2.0 kcal/mol, n = 3, and do = 180O.
+The overall reproduction of torsional barriers is quite good (see
+Table 11). The C-3-sp3 barriers were chosen to fit the experimental
+barriers, the H202and H2S2values were best compromise values,
+and anisole, thioanisole, acetaldehyde, isoprene, and ethylbenzene
+are tests of eq 17.
+3. Inversion. For UFF, a one- or two-term cosine Fourier
+expansion in w is used for atoms I bonded exactly to three other
+atoms J, K, L:
+
+E , = K I J K L (+
+~ OCI COS WIJKL + C2 COS ~ W I J K L )(18)
+where K I j K L is the force constant in (kcal/mol) and w1jKL is the
+angle between the IL axis and the IJK plane. For a given central
+atom I there are three unique axes (IL, IJ, and IK); all three are
+considered, with each inversion barrier being divided by the
+number of inversions present (three) about center I. The cos 2w
+term yields a minimum for w = 90° and a maximum for w = O0
+as would be appropriate for PH3. The cos w term yields a minimum for w = Oo and a maximum for w = 180° as would be
+appropriate for ethylene. Linear combinations of these terms will
+describe all intermediate cases. The inversion potential can also
+be expressed in terms of the computationally convenient normal
+to the IJK plane and the angle that the IL axis makes with respect
+to the normal to the IJK plane, 7 I j K L . The two forms are related
+by w = y - T .
+
++ CI sin YIJKL + Cz' COS ~ Y I J K L )(19)
+E , KIJKL(CO
+For C-2 and C R sp2 atom types with exactly three substituents,
+C, = 1, Cl = -1, and C2 = 0. If carbon is bonded to 0-2, the
+force constant is set to 50 kcal/mol, as fit to the bz wag of
+formaldehyde; otherwise, the force constant is set to 6 kcal/mol,
+as fit to the low-energy a,, blur and b2 vibrational modes of
+ethylene and the low-energy e2,, a2,, and bzavibrational modes
+of benzene.l* Force constants for groups 5 and 6 were chosen to
+fit the experimentally observed inversion barriers for the group
+5 hydrides NH3 and PH3.21 The wo were obtained from standard
+reference structures of the hydrides and the C,, coefficients fit to
+a minimum with E, = 0 at w = wo and that E , for the maximum
+at w = Oo be equal to Ebarricr.
+In order to fit observed barriers,
+= 0 for nitrogen and 22
+inversion terms corresponding to Ebarrier
+kcal/mol for P, As, Sb, and Bi are used. The inversion force
+constants for all other atom types are set to zero.
+E. van der Waals. Nonbonded interactions (van der Waals
+forces) are included in the Universal force field. A Lennard-Jones
+6-1 2 type expression is used:
+
+J. Am. Chem. SOC.,Vol. 114, No. 25, 1992 10029
+=
+
+xIJ
+
+y2<x1
+
++ XI)
+
+where x I is the atomic van der Waals distance, is analogous to
+the summing of covalent radii as used in eq 2 above for bond
+distances. Use of a geometric mean combination rule for distance
+xIJ
+
+=
+
+%
+4
+
+(21) Lister, D. G.; Macdonald, J. N.; Owen, N. L. Internal Rorarion and
+Inversion; Academic Press: New York, 1978; pp 179-180.
+
+(21b)
+
+facilitates summation of van der Waals terms for crystalline
+systems. The molecular parameters (distances, angles, inversion
+barriers, and torsional barriers) are developed here using geometric
+distance combination rules. UFF assumes standard geometric
+combination rules for the well depth:
+DIj = (DIDJ)1/2
+(22)
+where DI is the atomic van der Waals energy. Values of the van
+der Waals distances xI and DI for UFF are listed in Table I.
+The most difficult part of developing a general force field is
+the assignment of van der Waals parameters. The present Lennard-Jones van der Waals parameters are developed within the
+conceptual framework of the exponentiald form. This functional
+form is physically based on the short-range exponential repulsion
+arising from Pauli orthogonalization and the long-range 1/#
+induced dipole-induced dipole dispersive attraction:
+EvdW =
+
+Ae-BX- c 6 / X 6
+
+(23)
+
+The repulsive exponential B and the dispersive attractive term
+C, are developed below for the entire periodic table. The third
+degree of freedom contained in eq 23 is determined from an
+empirical relation obtained between literature values of Lennard-Jones distances and the present repulsive exponentials B.
+The repulsion exponent B can be developed from a consideration
+of the physical basis of the repulsive term, that is, the repulsive
+interaction between pairs of closed shells. This repulsive interaction
+to first order is proportional to the overlap between the wave
+functions squared. We begin with the approximate relationZ2that
+the long-range distance dependence of a wave function is
+
+-
+
+e-(fir
+(24)
+The overlap between a pair of exponential functions (with the same
+Slater exponent 5 ) is
+\k
+
+S = (1 + 5r + y3(5r)2)e-€r
+
+(25)
+
+Thus the repulsive interaction (S2)between a pair of atoms
+s
+2
+e-2€r
+(26)
+
+-
+
+is directly related to the electron density where, from eq 24
+
+5 = d21P
+(27)
+This leads to the exponent in the exponential-6 being defined as
+B = 25 = 2 d 2 I P
+
+where DIJ is the well depth in kcal/mol and xIJis the van der
+Waals bond length in A. The 6-12 Lennard-Jones form is chosen
+over an exponential-6 form (discussed below) for its numerical
+stability; the exponential-6 form blows up for small internuclear
+separations. A complete set of exponential-6 parameters are
+provided in Table I although the valence parameterization discussed above actually used Lennard-Jones 6-12 nonbond potentials.
+As is conventionally done, the general xIJand DIj are obtained
+from the homonuclear parameters through the use of combination
+rules. The choice of combination rules for the Lennard-Jones
+distances is somewhat problematic. The use of an arithmetic mean
+for the Lennard-Jones distance,
+
+(214
+
+(28)
+
+The ionization energy for each atom I (IP,) in the entire periodic
+table can be obtained from the sum of the G M P electronegativity
+and idempotential:I3
+
+IPI = XI
+
++724
+
+(29)
+
+The dispersion terms c6 are taken as proportional to the upper
+bound numerical Hartree-Fock values presented by Fraga,
+Karwowski, and Saxena (FKS).23
+c
+6
+
+= csFKS/s
+
+(30)
+
+A plot of the FKS values for the noble gases versus the semiempirical values reported by Kwnar and
+is used to obtain
+(22) Handy, N. C.; Marron, M. T.;Silverston, H. J. Phys. Reu. 1969,180,
+45.
+( 2 3 ) Fraga, S.;Karwowski, J.; Saxena, K. M. S.Handbook of Atomic
+Dora; Elsevier Scientific: Amsterdam, 1976.
+
+RappP et al.
+
+10030 J. Am. Chem. Soc., Vol. 114, No. 25, 1992
+2.1
+
+1.9
+
+T
+
+1
+
+zeta 12
+Zeta I 13
+Zeta = 14
+.)
+
+\ '
+
+P
+s
+
+0.2
+
+5P
+
+-0.2
+O I
+
+-0'41
+-0.6
+
+1.1
+
+I
+
+I
+
+0
+
+9
+
+.0.8
+
+I
+
+,
+
+I
+
+,
+
+I
+
+18
+
+27
+
+36
+
+45
+
+54
+
+Figure 1. A plot of the Kraga, Karwowski, and Saxena c6 dispersion
+terms versus the semiempirical values of Kumar and Meath. The line
+is the least-squares fit.
+
+2.8
+
+I
+
+I
+
+I
+
+3.2
+
+3.6
+
+4
+
+Figure 2. Plot of an exponential-6 van der Waals term as a function of
+{ = 12, 13, and 14 with B, set to 4.3333 A-' and C,, set to 676.929
+(kcal/mol) /A6.
+17
+
+the Z-dependent scaling equation, eq 31 (see Figure 1) ( R =
+0.948).
+
++ 0.016262
+
+2.4
+
+R (4
+
+2
+
+S = 1.166
+
+1
+
+2
+
+(31)
+
+That there should be a linear relationship between the correlation
+error in a Hartree-Fock calculation and the number of electrons
+(Z)
+is quite reasonable. The use of scaled c
+6 terms has previously
+been reported, though a different scaling scheme was used.25
+The third degree of freedom in eq 23 can be obtained by rearranging eq 23 into a mathematically equivalent formz containing
+a well depth term DIJ,a distance term xIJ,and a shape parameter
+
+16
+15
+
+r
+
+-0-
+
+Second Period
+
+-e
+
+Third Period
+
+- 0- -x -
+
+Filth Period
+
+X
+
+Foutth Period
+
+l4
+13
+
+Iv'
+
+r:
+
+(32)
+
+A comparison of like terms in eq 23 and 32 leads to eq 33 for the
+distance,
+XI
+
+= t/BI
+
+(33)
+
+eq 34 for the well depth
+(34)
+and eq 35 for the repulsive preexponential term.
+(35)
+
+Table IV. van der Waals Parameters
+literature
+
+Universal
+
+XI
+DI
+XI
+DI
+3.898
+0.095
+3.851
+0.105
+3.662
+0.077
+3.660
+0.069
+0
+3.405
+0.096
+3.500
+0.060
+F
+3.472
+0.073
+3.364
+0.050
+Ne
+3.243
+0.072
+3.243
+0.042
+P
+4.15
+0.32
+4.147
+0.305
+S
+4.03
+0.344
+4.035
+0.274
+C1
+3.950
+0.283
+3.947
+0.227
+Ar
+a
+3.867
+0.239
+3.868
+0.185
+As
+0.6
+a
+3.35
+4.230
+0.309
+Se
+b
+3.70
+0.517
+4.205
+0.291
+Kr
+a
+4.165
+0.329
+4.141
+0.220
+Sb
+0.5
+4.420
+0.449
+a
+3.54
+Te
+b
+3.74
+1.23
+4.470
+0.398
+Xe
+a
+4.512
+0.457
+4.404
+0.332
+"Fit to the elemental crystal structure, this work. bFit to the elemental crystal structure, WAG unpublished results.
+element
+C
+N
+
+ref
+15
+27
+27
+27
+a
+2
+2
+2
+
+As discussed previously? there are three simple choices for this
+third parameter
+(1) assign a value of 12 to (, which results
+in the Lennard-Jones and exponential-6 forms having precisely
+the same long-range distance dependence; (2) assign a value of
+13.772 to (, which gives the exponential-6 and 6-12 forms the
+same curvature at the bottom of the well; or (3) fit (to a discrete
+set of crystal structures for each element. Figure 2 shows the
+Lennard-Jones curves for three values of (with B and c6 fixed.
+Given the extreme sensitivity of the resulting Lennard-Jones
+parameters to the choice of (, the enormity of the challenge of
+fitting parameters for the entire periodic table, and the difficulty
+in factoring out special intermolecular bonding interactions in the
+crystal structures of the element^,^^*^^ we have chosen to use the
+available data and empirically estimate { as discussed below.
+
+Using the BI defined by eqs 28 and 29 and literature valueszJ8
+for exponential-6 or 6-12 xI(s, linear relations are observed for
+( (which is BI/xI) as a function of the number of valence electrons
+and row in the periodic table (see Figure 3). The scatter in the
+plot for the second period can be attributed largely to the choice
+of partial charges for the molecules used in the determination of
+the xIparameters from X-ray crystal structures. Given the uncertainty in partial charge assignment, we have chosen to use two
+neutral cases ( = 12.73 for C, from graphiteI5 and ( = 15.44 for
+
+(24) Kumar, A,; Meath, W. J. Mol. Phys. 1985, 54, 823.
+(25) Spackman, M. A. J. Chem. Phys. 1986, 85, 6579.
+(26) Hsu,L. Y.; Williams, D. E. Acra Crysr. 1985, A41, 296.
+(27) Desiraju, G. R.; Parthasarathy, R. J. Am. Chem. SOC.1989, 111,
+8725.
+
+(28) Williams, D. E. Acta Cryst. 1974, A30, 71. Williams, D. E.; Starr,
+T. L.Compur. Chem. 1977,1, 173. Williams, D. E.; Hsu,L.Y.Acra Crysf.
+1980, A36, 277. Cox,S. R.; Hsu,L.Y.; Williams, D. E. Ibid. 1981, ,437,293.
+Williams, D. E.; Cox,S. R. Ibid. 1984, 840, 404. Williams, D. E.; Houpt,
+D. J. Ibid. 1986, 8 4 2 , 286.
+
+r:
+
+UFF, a Full Periodic Table Force Field
+
+J. Am. Chem. SOC.,Vol. 114, No. 25, 1992 10031
+
+Ne to obtain a linear relation, eq 36, for the second period.
+( = 10.02 0.6775n
+(36)
+
++
+
+For the third period a least-squares fit to the xI data in Table IV
+(for the third period) leads to:
+( = 8.587 0.897n
+(37)
+
++
+
+The discontinuity in slope between the third and fourth periods
+in Figure 3 can be attributed to the onset of special intermolecular
+bonding interactions in the ~ o l i d s ; ~P~ and
+, ~ ' S are both nonmetals
+but As and Se are both metallic or near metallic. These special
+bonding interactions should not be included in a van der Waals
+parameter set. Thus, for the remaining main group elements, eq
+38 is used wherein a slope of 1 is assumed (extrapolated from the
+slopes of eq 36 and 37 and the noble gases are assigned a value
+of 15.
+(=8+n
+(38)
+The repulsive expmentials Band dispersion terms c
+6 along with
+the shape parameters t are used to define the Lennard-Jones
+distances xIand well depths using eq 33 and 34.
+The thus obtained Lennard-Jones parameters provide reasonable
+estimates for the elements in their atomic state. A comparison
+of the UFF Lennard-Jones parameters with literature values for
+several elements is provided in Table IV.
+For metals in positive oxidation states, the above estimates are
+not appropriate. For cationic metals we have obtained ionic c61+
+and BIt as follows. The exponent BIt is defined as
+(39)
+where IP21is the second ionization energy for atom I as obtained
+from the GMP electronegativity and idempotentiali3
+The c61t are obtained by scaling the neutral c6, terms by the
+ratio of the London estimates for the neutral and positive ion C i s
+
+c,
+
+-
+
+IPa2
+
+(41)
+
+thus,
+where I F I and IPI are the experimental first and second ionization
+are the FKS polarizabilities
+energies of atom I, and aIand
+for the metallic neutral and positive ions. Setting (to 12 for the
+metallic ions the Lennard-Jones distance, xIt can be directly
+obtained from eq 33 and DI+from eq 34.
+These Lennard-Jones parameters provide reasonable values for
+elements in a cationic state. For example, the UFF distance and
+well depth of x1 = 3.148 A and DI = 0.036 kcal/mol for Ag can
+be compared with a distance parameter of xI = 3.100 A obtained
+by fitting the crystal structure for AgCl with a QEq partial charge
+on Ag of 0.62 and a DI assigned a value of 0.036 kcal/mol. The
+experimental cell parameter for AgCl is 5.556 A;29
+if the UFF
+Ag' parameters are used, a cell constant of 5.592 A is obtained.
+For metals with one electron in the valence shell, the above
+procedure breaks down; the discontinuity in the IP versus charge
+curve associated with removing an electron from the core, rather
+than an additional valence electron, is likely responsible. For the
+group 1 elements we have chosen to fit the distance parameters
+to experimental lattice parameters with assumed well depths. The
+results of the fits are provided in Table V.
+The derived van der Waals parameters can be compared to van
+der Waals parameters in the literature explicitly fit to crystal
+properties. The present hydrogen radius and well depth of 2.886
+A and 0.044 kcal/mol are nearly the same as the Lennard-Jones
+radius and well depth of 2.9267 A and 0.0335 kcal/mol fit to
+1~ethylene.l~
+The present carbon radius and well depth of 3.851
+r a n d 0.105 kcal/mol are nearly the same as the Lennard-Jones
+(29) Crysfal Dafa Delerminafioe Tables; Ondik, H. M., Woken, G. M.,
+Eds.; US.Department of Commerce: Washington, DC, 1973; Vol. 11.
+
+Table V. Optimized Alkali Lennard-Jones Parameters
+metal
+LiF
+NaF
+
+KF
+RbF
+CsF
+'Angstroms.
+
+am;
+
+4.026
+4.628
+5.344
+5.64
+6.002
+In kcal/mol.
+
+a,~d
+
+Dllb
+
+41"
+
+4.026
+4.629
+5.344
+5.64
+6.002
+
+0.05
+0.06
+
+2.298
+2.824
+3.637
+3.931
+4.335
+
+0.07
+0.08
+0.09
+
+radius and well depth of 3.805 A and 0.069 kcal/mol fit to graphite.I5
+F. Electrostatic hteractiom. The valence parameters discussed
+in the above sections were obtained without partial charges. When
+included, electrostatic interactions are calculated by:
+
+E,,
+
+332.0637(QiQj/<Rij)
+
+(43)
+
+Qi and Qj are charges in electron units, Ri. is the distance in
+angstroms, and c is the dielectric constant. Tke default dielectric
+constant is 1 for UFF and no distance cutoff is used. Partial
+charges are obtained using the recently published QEq charge
+equilibration scheme.30
+C. Nonbonded Exclusions. With UFF we follow the usual
+convention of excluding van der Waals and electrostatic interactions for atoms that are bonded to each other (1,2 interactions)
+or bonded to a common atom (1,3 interactions).
+
+III. Calculational Results and Summary
+Detailed comparisons of conformational energetics and molecular structures with experimental and published MM2(3) results
+for organic compounds3' and application of UFF to predict
+structures of main
+transition metal inorganic, and organometallic compounds33are the subjects of future papers. Here
+we present the results on a select set of molecules to demonstrate
+the overall utility of the approach. We begin with structural
+comparison for a few organic molecules where the bond order
+varies to demonstrate the utility of a radius plus bond order
+correction distance function, eq 2. This is followed by three main
+group inorganic molecules: octamethylcyclotetrasiloxane,
+
+1,3,5,7-tetrakis(trifuoromethyl)-2,4,6,8,9,lO-hexathia-l,3,5,7tetragermaadamantane, and dodecaphenylcyclohexastannane.We
+conclude with calculations on a set of transition metal complexes
+including tris(hexamethyldisilylamide)scandium(III), (L- or Dalanine-N-acetato)(L-histidinato)chromium(III), bis(N-allylsalicylidineiminato)nickel(II), and 1,2-bis(dimethylphosphino)ethane(neopentylidyne) (neopentylidene)(neopentyl)tungsten (VI).
+A procedure. Minimizations were camed out on a IRIS 4D20
+using a Newton-Raphson minimization scheme with a norm of
+the gradient convergence criteria of 1 X
+(kcal/mol)/A and
+were verified as minima by the absence of negative eigenvalues
+in the force constant matrix. Saddle points for torsional barriers
+were obtained using a hill climbing algorithm and were verified
+by the presence of a single negative eigenvalue in the force constant
+matrix.
+B. Organics. The C-3, (2-2, and C-1 radii as well as X of eq
+3 were chosen to reproduce the various C-C distances of propane,
+propene, and propyne. From the results presented in Figure 4
+(experimental quantities in parentheses), it is apparent that it is
+possible to reproduce the five unique distances in the set with four
+adjustable parameters (three radii plus bond order scaling parameter A). Further, the experimental C-H distances in propene
+and propyne are also reproduced. The angles are less well reproduced: the C-C-C angles of propane and propene are underestimated by 1.1" and 2.3'. Further, the central C-C bond
+of butadiene is long by 0.006 A, and the C-C double bonds of
+~~
+
+~~
+
+___
+
+~ _ _ _ _
+
+(30) Rap@, A. K.; Goddard, W. A., I11 J . Phys. Chem. 1991,95,3358.
+(31) Casewit, C. J.; Colwell, K. S.;Rap*, A. K. J. Am. Chem. Soc.,
+second of three papers in this issue.
+(32) Casewit, C. J.; Colwell, K. S.;Rap*, A. K. J . Am. Chem. Soc., third
+of three papers in this issue.
+(33) Rapp€, A. K.; Colwell, K. S.; Casewit, C. J. Manuscript in preparation.
+
+Rappd et al.
+
+10032 J. Am. Chem. Soc., Vol. 114, No. 25, 1992
+
+1.111
+(1,096)
+
+\
+1.526
+
+(112.4)
+
+1.110
+(1.089)
+
+\
+
+\
+
+(1,091)
+1 , 0 8 5 / (1.336)
+F \ ( j
+
+1.111
+(1.094)
+
+1.471
+
+0
+(1.345)
+
+Figure 4. Sample hydrocarbon structures; experimental structural parameters in parentheses.
+
+I
+
+1,110
+(1.090)
+
+1.471
+(1.451)
+
+/(;:PA)
+
+p
+
+Figure 6. Sample oxohydrocarbon structures; experimental structural
+parameters in parentheses.
+
+(1.104)
+N
+
+(1.482)
+
+-
+
+1.058 1.205 1.412
+(1.058) (1.205) (1.376)
+
+1.463
+(1.458)
+
+1 157
+(1 157)
+
+-N
+1.157
+(1,159)
+
+Figure 5. Sample nictinohydrocarbon structures; experimental structural
+parameters in parentheses.
+
+butadiene are calculated to be 0.015 A short. This pattern for
+butadiene indicates that partial (but not substantial) A bonding
+between the central carbons is not being accounted for in the force
+field.
+For nitrogen-containing organic molecules, the experimental
+structures are reasonably well described except for cases with
+partial A bonding which is not included in this version of UFF.
+For dimethylamine (see Figure 5 ) , the N-H distance is 0.025 A
+too long and the C-N-C angle 1.go too small, though the angle
+has opened up significantly (1 10.2O) from the equilibrium angle
+of N-3 (106.7'). For trimethylamine the C-N-C angle is only
+0.9' too small, though the C-N distances are 0.02 8, large. The
+C-N distance is underestimated by 0.04 A in dimethyldiazene,
+but the remaining geometric parameters are well reproduced. For
+acetonitrile, the C-C single bond distance is 0.005 A long. For
+2-cyano- 1-ethylene the calculated C-C single bond is overestimated by 0.034 A, indicating partial A bonding between the
+centers. For 2-cyano-1-ethylene the C-C double bond is 0.005
+
+A short, the C-N triple bond is 0.007 A short, and the C-C single
+bond is 0.015 A long also indicative of partial ?r bonding not
+accounted for in the force field.
+Reasonable agreement with experiment is also found for oxygen-containing organic molecules (see Figure 6). The C-0-C
+angle of dimethyl ether is 2.5' smaller than experiment, though
+it does open up (109.2') significantly from the equilibrium angle
+of 104.51'. For methyl ethyl ether the calculated C-C distance
+is 0.001 A long; the 0-methyl and 0-ethyl distances are 0.005
+8, too short and 0.007 8, too long, respectively. The C - 0 4 angle
+is 2.5' too small. For methyl vinyl ether the computed C-C double
+bond is 0.002 A long, the C-O single bond is fit exactly, but the
+vinyl (2-0 distance is 0.053 8, long, indicative of partial ?r bonding
+being ignored. The C-O double bond of acetaldehyde is overestimated by 0.004 A, and the C-C bond is underestimated by
+0.01 A. For acetone the C-C single bonds are 0.009 A short and
+the C-C-C an le is 2.9' large. For propynal the C-O double
+bond is 0.006 long, the C-C single bond is well reproduced,
+and the C-C triple bond is 0.004 A short. The calculated C-O
+double bond of acrolein is 0.001 A long, the C-C single bond is
+0.002 8, long, and the C-C double bond is 0.01 A short. For
+methyl formate the C-0 double bond is 0.019 A long, the ester
+C-O single bond is 0.067 A long (indicative of missing A delocalization), and the other C - O single bond distance is 0.012 A
+short.
+For amides the calculated structures are acceptable (see Figure
+7). The calculated C-O double bond of acetamide is 0.002 A
+too long, the C-C single bond is 0.021 A too short, and the C-N
+resonating bond is 0.01 5 8, too short. For N-methylformamide
+the calculated C-O double bond is 0.001 A short, the C-N resonating bond is 0.001 A short, and the C-N single bond is fit.
+The C-N-C angle is 0.7' larger than experiment.
+For organic molecules with bonds without partial ?r bonding,
+the force field reproduces the experimental organic structures to
+within 0.02 A and 2'.
+C. Main Group. For molecules with main group-main group
+bonds, experimental structures are reasonably well described in
+
+1
+
+UFF, a Full Periodic Table Force Field
+
+J . Am. Chem. Soc., Vol. 114, No. 25, 1992 10033
+
+1I
+
+0
+
+1.222
+(1.220)
+
+Octamethylcyclotetlasiloxane
+
+Figure 7. Sample amide structures; experimental structural parameters
+in parentheses.
+
+this version of UFF. Sample molecular structures are collected
+in Figure 8 and the individual molecules discussed below.
+OcCametbykyclotetxaneM X-ray studies have shown that
+this eight-membered siloxane ring is puckered, with Si-0-Si angles
+of 142'. As discussed in the main group benchmark paper,32the
+correct description of Si-0-Si linkages by molecular mechanics
+is still a matter of concern; the Si-0 bond distances and Si-0-Si
+angles are very sensitive to the nature of the other substituents
+bound to Si. Agreement between UFF and experiment is fair for
+this molecule. The calculated Si-0 distances are 0.058 8, short
+and the Si-0-Si bond angle is 3.1' large. The calculated Si-C
+distances are 0.054 8, short and the C-Si-C angles are 3.6' large.
+The 0-Si-0 bond angle is only 0.5' too large.
+
+1,3,5,7-Tetrakis( trifluoromethyl)-2,4,6,8,9,lO-hexathia1,3,5,7-tetrage~damantaneetragermaadamantaoeP5 The threedimensional structure
+of this G e S analogue of adamantane is well reproduced by UFF.
+The calculated Ge-S bond distances are only 0.011 A long. The
+Ge-C distances are 0.05 8, short and the F-C distances are 0.07
+8, long. The calculated S-Ge-S angles are only 0.9' large and
+the Ge-S-Ge angles are 2.4O small.
+Dodecaphenylcyclohexstamane.36 In contrast to the difficulties encountered in correctly predicting Si-Si bond lengths as
+reported in the organic benchmark paper,31 the structure of this
+Sn ring is well reproduced by UFF. The calculated Sn-Sn bond
+distances are underestimated by only 0.001 A, and the Sn-C
+distances are underestimated by 0.036 8,. The calculated SnSn-Sn angles are 1.8' small and the C-Sn-C angles are 3.6' large.
+The Sn-Sn-Sn-Sn dihedral angle is 5.3' large.
+D. Organotransition Metal Compounds. For molecules containing metallic elements, experimental structures are reasonably
+well described in this version of UFF. Sample molecular structures
+are collected in Figure 9 and the individual molecules discussed
+below.
+Tris(hexamethyldisilylamide)scandium(III),37 X-ray studies
+have shown that the molecule is pyramidal with planar tris(si1ylamide) groups. The calculated N-Sc-N bond angles are only
+0.7' smaller than experiment. The calculated silicon-carbon bonds
+are overestimated by 0.01 A to 0.02 8,. As discussed in the metal
+
+Ccdecaphenylcyclohexatln
+
+Figure 8. Structural formulas and numbering of atoms for a set of main
+group molecules.
+
+benchmark paper,33 the Sc-N amide bond distances are well
+described if a bond order of 3 / 2 is used; the bonds are only short
+by 0.014 8, on average.
+(L- or ~-Ala~ne-N-acetato)(~-histidinato)chromium(III).~~
+X-ray analysis of this classical coordination complex shows the
+environment around Cr is a distorted octahedral. UFF can only
+partially reproduce the distortion, with bond angle errors of up
+to 8'. The H-bonding network observed in the experimental
+structure likely contributes to the distortion from octahedral
+symmetry. This H-bonding effect is not included in the force field.
+Fair agreement between UFF and experiment is observed for the
+Cr-ligand distances: the calculated Cr-O bond distances, on
+average, are 0.047 8, short; the histidine Cr-N distance is 0.1 17
+8, long using a bond order (the distance would be 0.047 8, short
+using a bond order of 1); and the calculated amino Cr-N distances
+are 0.078 8, and 0.058 8, long.
+cis -Bis( 2,7-dimethyl-3,6-diaza-3,5-octadiene)dichlororutheni~m(H).~~With the exception of the Ru-N distances the
+coordination environment calculated by UFF is in good agreement
+with the experimental X-ray structure. The calculated Ru-C1
+distances are 0.006 8, short, on average. The calculated Cl-Ru-Cl
+angle is 0.9' too small, and the N-Ru-N angles are 4.1 O and 5.1 '
+too large. The Ru-N distances range from being 0.034 8, too
+short to being 0.015 8, too long (using a bond order of 3/2). Since
+ruthenium is a low-spin d6 ion in this complex, a bond order of
+3 / 2 is appropriate due to back-bonding involving the C-N T *
+orbitals."
+mer -Trichloro[N-(3-aminopropyl)- 1,3-diaminopropane]co-
+
+balt(III):l The structure has been analyzed crystallographically
+and shows that the triamine chelate is bonded with the primary
+(38) Sato, M.; Kosaka, M.; Watabe, M. Bull. Chem. SOC.Jpn. 1985, 58,
+814.
+
+(34) Steinfink, H.; Post, B.; Fankuchen, I. Acru Crystallogr. 1955, 8,420.
+(35) Haas, A.; Kutsch, H. J.; Kriiger, C. Chem. Ber. 1987, 120, 1045.
+(36) Drlger, V. M.; Mathiasch, B.; Ross,L.; Ross, M. Z. Anorg. Allg.
+Chem. 1983, 506, 99.
+(37) Ghotra, J. S.;Hursthouse, M. B.; Welch, A. J. J. Chem. SOC.,Chem.
+Commun. 1973, 7, 669.
+
+(39) Pank, V.; Klaus, J.; von Deuten, K.; Feigel, M.; Bruder, H.; Dieck,
+
+H.Trans. Me?. Chem. 1981, 6 , 185.
+
+(40) Shriver, D. F.; Atkins, P. W.; Langford, C. H. Inorgunic Chemisrry;
+W. H. Freeman: New York, 1990.
+(41) Barefield, E. K.; Carrier, A. M.; Vandeweer, D. G. Inorg. Chim. Acra
+1980, 42, 271.
+
+10034 J . Am. Chem. SOC.,Vol. 114, No. 25, 1992
+
+RappC et al.
+
+H\
+
+Tns(hexamethyldid lamide)
+scandium(llt ’
+
+L a D-Alanine-Nacetato(Lhistinato)
+chromium(li1)
+
+cis-Bis(2,7dimelhyl-3,6-diaza-3,5octadiene)dichlororuthenium(ll)
+
+mer-Trichloro[N-~3-am1noproI)
+-t.3-a,aminopropane~~11(~~
+
+0
+
+cis-DichloroJmesc-2,3diaminobulane palladium(ll)
+
+Bis(Hal~l~licylidlneimlnalo)
+nickel(ll)
+
+1,2-Bis(dimethylphosphino)ethane(necpenty1idyne)(neopentylidiene)(nepentyi)tungslen(VI)
+
+Tris[tis(trimelhylsi I amdo]
+oxoniobium
+’
+
+y3,
+
+P-ens-bis(dimethylgboximato)
+(deth Idimethylmalonate)
+$yridine)coball
+
+Chloromethyl-[(t)-(2S,35)-O
+isopropylidene-2,3-dihydroxy1.4-bs(diphenyiphosphino)butane]
+olatinum(lll
+
+Figure 9. Structural formulas and numbering of atoms for a set of metal containing molecules.
+
+amino groups trans. Overall, the experimental structure is well
+reproduced by UFF. The calculated Co-N distances are in very
+good agreement with experiment (errors within 0.011 A). The
+calculated axial Co-Cl distances are 0.012 A and 0.039 A too
+short. The calculated equatorial Co-Cl bond (trans to nitrogen)
+is 0.078 A too short, owing to an unaccounted for trans influence.
+The bond angles at Co are well reproduced by the force field.
+cis -Dichioro(meso -2,3-diemin0butane)paliadium(II).~~
+Structural studies of this complex show squareplanar coordination.
+Two chlorine atoms are in cis postions, and the diamino ligand
+occupies two cis postions. The calculated results are in good to
+fair agreement with the experimental structure. The calculated
+Pd-Cl distances are only 0.003A too small. The Pd-N distances
+are 0.021 A too small. The N-C distances are 0.040A too short.
+The small experimental angular distortion away from strict square
+planarity is underestimated by approximately 5 O with the UFF
+force field.
+Bis(N-aUyEPali~yfto)~ck~(~).4~
+X-ray studies have
+shown that this Schiff base complex is nearly planar. The immediate coordination environment at Ni is calculated by UFF to
+be nearly planar, but significant distortions from planarity are
+observed in the next nearest neighbors. The calculated Ni-O bond
+is 0.039 A short, and the Ni-N bond is 0.063 A short. The
+computed C-O distance in the chelate ring is 0.01 1 A long; the
+(42) Ito, T.; Marumo, F.; Saito, Y .Acta Crystallogr., Sect. B Srrucr. Sci.
+1971, 827, 1695.
+(43) Bhatia, S.C.; Bindlish, J. M.; Saini, A. R.; Jain, P. C . J . Chem. Soc.,
+Dalton Trans. 1980, 7, 1773.
+
+N-C imine distance is 0.023A long; and the N-C amine distance
+is 0.042A short. The intrachelate N-Ni-O bond angle is 2.1°
+small; the interchelate angle is 2O too large. The C, N, and 0
+atoms of the salicylidineiminatoligands are described with resonating atom types and internal bond orders of 3 / 2 . The bonds
+to Ni use bond order 1.
+T r i s [ b ~ ( t r i m e t h y ~ ~ y l ) ~ ~ ~ x ~ o b iX-ray
+u m ( studies
+V).~
+have shown that the coordination environment of the Nb is a
+distorted tetrahedron, with planar nitrogen atoms. The calculated
+0-Nb-N angle is 2.6O too large. The calculated N-Nb-N angle
+is 1.9O too small. The Nb-0 bond distance (bond order 3) is
+well-predicted. The calculated Nb-N amide bond distances are
+0.005 A too long (bond order 3/2), and the calculated Si-N bond
+distances are 0.051 A too long.
+Methylmanganese Penta~arbonyl.4~The Mn-C distance for
+the metal-methyl bond is 0.054 A short by UFF and the Mn-C
+distance for the equatorial metal-carbonyl bonds are only 0.009
+A long (bond order 2).
+trans-Bis(dimethylglyoximato)(diethyl dimethylmaionate)(pyridine)cobalt.46 X-ray studies of this cobaloxime have been
+carried out. The calculated structural parameters are in fair
+agreement with the experimental results. The calculated glyox(44) Hubert-Pfalzgraf, L.G.; Tsunoda, M.; LeBorgne, G. J . Chem. Soc.,
+Dalton Trans. 1988, 533.
+(45) Hellwegc, K-H. Landolt-Bornstein Numerical Data and Functional
+Relationships in Science and Technologv; Springer Verlag: Berlin, 1976; Vol.
+7, p 325.
+(46) Randaccio, L.; Bresciani-Pahor, N.; Orbell, J. D.; Calligaris, M.
+Organometallics 1985, 4, 469.
+
+J . Am. Chem. SOC.1992,114, 10035-10046
+imato Co-N distances are 0.043 A long on average. The calculated pyridine Co-N distance is 0,119 A short, consistent with
+a significant trans influence from the alkyl group (if a bond order
+of
+is used, the calculated pyridine Co-N distance is 0.047 A
+long). The Co-C distance is only 0.023 A long.
+1,2-Bis(dimethylphosphino)ethane(neopentylidyne) (neopentylidene)(neopentyl)hmgsten(VI).47 X-ray studies have shown
+that the coordination environment of the W is a distorted square
+pyramid. The experimental distortion of the square pyramid plane
+away from tungsten is not accounted for in the present force field
+because an octahedral atom type is used for tungsten (W-6+6).
+Large angular errors at W result: the UFF Cl-W-C3 angle is
+too small by 8", the C1-W-C5 is too small by 20°. The experimental M-C single, double, and triple bond distances are well
+reproduced for this unique complex. This is a remarkable result
+considering a single covalent W radius is used in the U F F force
+field; the bond order correction can correctly account for the
+change in bond distance as a function of bond order. The W-C
+single bond is 0.05 A short, the W-C double bond is 0.027 A long,
+and the W - C triple bond is 0.029 A long. The electronic effect
+at metal alkylidene centers whereby the M-C-C angle is enlarged
+as a result of a electronic donation from the a C-H bond to the
+metal center is not accounted for in the UFF force field, and hence
+the W-C6-C7 bond angle is 17" too small. The W-C-C angles
+for the W - C single and triple bonds are in error by less than lo.
+ChloromethyN(+)-(2S,3S)-O-isopropylidene-2,3-dihydroxyl,ebi~(aipaenylp~phino)butanelplatinum).~~
+The structure
+of this complex has been analyzed crystallographically and the
+coordination of the platinum is essentially square planar. The
+two Pt-P bond distances are significantly different, consistent with
+(47) Churchill, M. R.; Youngs, W. J. Inorg. Chem. 1979, 18, 2454.
+(48) Payne, N. C.; Stephan,D. W. J . Organomef. Chem. 1982,228,203.
+
+10035
+
+trans-influence arguments. The Pt-PI (trans to C1) is 0.007 A
+short, bond order 2. The computed Pt-P2 (trans to carbon)
+distance is only 0.005 A short, bond order 1'/*. The calculated
+Pt-C and Pt-Cl distances are only 0.04 A short and long, respectively.
+IV. Conclusions
+It is possible to construct a force field from simple rules and
+atomic parameters that is capable of reproducing most structural
+features across the periodic table with errors less than 0.1 A in
+bond distances and 5" to 10" in angle bend. Further applications
+of UFF to organic, main group, and metal compounds are described in the following papers. Enhancements to UFF to decrease
+structural and energetic errors are underway.
+
+Acknowledgment. A.K.R. gratefully acknowledges support of
+this research by Shell Development and Molecular Simulations
+Inc. W.A.G. gratefully acknowledges support of this research
+by a grant from DOE-AICD. A.K.R. and C.J.C. thank M.A.C.
+for her timely arrival and Glynis Hubbard for her contributions
+to this work.
+Registry No. Octamethylcyclotetrasiloxane,556-67-2; 1,3,5,7-tetrakis(trifluoromethyl)-2,4,6,8,9,lO-hexathia1,3,5,7-tetragermaadamantane, 108009-38-7; dodecaphenylcyclohexastannane, 1066-22-4; tris(hexamethyldisilylamide)scandium(III), 375 12-28-0;(L- or D-alanine+
+acetato)(L-histidinato)chromium(II),
+96126-28-2; bis(N-allylsalicylidineiminato)nickel(II), 55292-18-7; 1,2-bis(dimethylphosphino)ethane(neopentylidyne)(neopentylidene)(neopentyl)tungsten(VI),
+
+70878-65-8.
+
+Supplementary Material Available: Tables of reference compounds used to obtain covalent radii for main group and transition
+elements (8 pages). Ordering information is given on any current
+masthead page.
+
+Application of a Universal Force Field to Organic Molecules
+C. J. Casewit,*-+K. S. Colwell,t and A. K. Rappii***
+Contribution from Calleo Scientific, 1300 Miramont Drive, Fort Collins, Colorado 80524, and
+Department of Chemistry, Colorado State University, Fort Collins, Colorado 80523.
+Received March 23, 1992
+
+Abstract: The application of a Universal force field (UFF) to the treatment of organic molecules is described. The ability
+of the force field to predict the structures of a variety of organic molecules is examined, and the results are compared with
+the MM2 or MM3 force fields. UFF correctly predicts the structures of unstrained and uncongested hydrocarbons, silanes,
+alkenes, saturated amines, saturated ethers and phosphines, aromatic systems, and simple unconjugated multiple bond containing
+compounds such as nitriles, ketones, and imines well. Bond angles are usually correct to within 3O, and bond lengths usually
+to within 0.02A. Specifically, the rms error in the UFF predicted C-C bond distances is 0.021 A, with a maximum of 0.067
+A for a set of 65 distances. For comparison, the MM2/3 RMS error in C-C distances is 0.012 A with a maximum of 0.029
+for the same set of molecules. The UFF rms error in C-N bond distances is 0.024A, with a maximum of 0.041 A for a set
+of 13 distances. For the same set of molecules, the MM2/3 rms error in C-N distances is 0.013 A with a maximum of 0.031.
+The UFF rms error in C-O bond distances is 0.025 A, with a maximum of 0.05 A for a set of seven distances. For the same
+set of molecules the MM2/3 rms error in C-0 distances is 0.007 A with a maximum of 0.015. The ability of UFF to calculate
+conformational energy differences in simple organic molecules is also examined.
+
+I. Introduction
+Over the last two decades, molecular mechanics has developed
+into a powerful and standard method for studying the molecular
+structure and related properties of organic molecules. The MM2,I
+MMP2: MM33 for& fields, develop& by Allinger and his group,
+are the premier force fields for the prediction of organic structures
+Calleo Scientific.
+tColorado State University.
+
+0002-7863/92/1514-10035$03.00/0
+
+and energies; the molecular mechanics results are usually of experimental accuracy. However, as pointed Out in the first paper
+of this series,4 standard force fields such as MM2 are limited to
+(1) Allinger, N. L. J . Am. Chem. SOC.1977, 99, 8127.
+(2) Sprague, J. T.; Tai, J. C.; Yuh, Y.; Allinger, N. L. J . Compuf.Chem.
+1987, 8;58i.
+(3) Allinger, N. L.; Yuh, Y. H.; Lii, J.-H. J . Am. Chem. SOC.1989, 1 1 1 ,
+855 1.
+
+0 1992 American Chemical Society
+
+
